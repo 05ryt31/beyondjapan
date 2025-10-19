@@ -515,84 +515,122 @@
 }
 .home-activity .col {
   display: grid;
-  gap: 5vw;
+  gap: 32px;
   grid-template-columns: repeat(3, 1fr);
 }
 @media screen and (min-width: 999.9px) {
   .home-activity .col {
-    gap: 30px;
+    gap: 32px;
     margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1023.9px) {
+  .home-activity .col {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
 }
 @media screen and (max-width: 519.9px) {
   .home-activity .col {
-    display: block;
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 }
 .home-activity .col-item {
   text-align: left;
-  /*background-color: #fff;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
-  padding: 4vw;*/
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
 }
-@media screen and (min-width: 999.9px) {
-  .home-activity .col-item {
-    /*padding: 40px;*/
-  }
-}
-@media screen and (max-width: 519.9px) {
-  .home-activity .col-item {
-    /*padding: 20px;*/
-  }
+.home-activity .col-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .home-activity .col-item p {
   font-weight: 300;
-  margin-top: 1em;
-  font-size: 90%;
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  padding: 0 24px;
+}
+.home-activity .col-item p:last-child {
+  padding-bottom: 24px;
+}
+@media screen and (max-width: 519.9px) {
+  .home-activity .col-item p {
+    font-size: 13px;
+    padding: 0 16px;
+  }
+  .home-activity .col-item p:last-child {
+    padding-bottom: 16px;
+  }
+}
+.home-activity .col-item .item-pic {
+  margin: 0;
+  overflow: hidden;
 }
 .home-activity .col-item .item-pic img {
-  border-radius: 10px;
+  border-radius: 0;
   width: 100%;
-  height: 250px;
+  height: 220px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.home-activity .col-item:hover .item-pic img {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 519.9px) {
+  .home-activity .col-item .item-pic img {
+    height: 180px;
+  }
 }
 .home-activity .col-item .item-name {
   color: #2454C0;
-  font-size: 2vw;
-  margin: 30px auto;
+  font-size: 14px;
+  margin: 20px 24px 16px 24px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-@media screen and (min-width: 999.9px) {
-  .home-activity .col-item .item-name {
-    font-size: 20px;
-  }
+  justify-content: flex-start;
+  gap: 8px;
+  font-weight: 600;
 }
 @media screen and (max-width: 519.9px) {
   .home-activity .col-item .item-name {
-    font-size: 5vw;
+    font-size: 13px;
+    margin: 16px 16px 12px 16px;
   }
 }
 .home-activity .col-item .item-name img {
   width: auto;
-  height: 50px;
+  height: 40px;
+}
+@media screen and (max-width: 519.9px) {
+  .home-activity .col-item .item-name img {
+    height: 32px;
+  }
 }
 .home-activity .col-item .item-name span {
   display: block;
-  text-align: right;
 }
 .home-activity .col-item .item-tit {
-  font-weight: 600;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-  font-size: 110%;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 24px 12px 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E9E9E9;
+  color: #000;
 }
-@media screen and (min-width: 999.9px) {
-  .home-activity .col-item:nth-child(1) .item-name {
-    font-size: 16px;
+@media screen and (max-width: 519.9px) {
+  .home-activity .col-item .item-tit {
+    font-size: 15px;
+    margin: 0 16px 12px 16px;
   }
 }
 .home-plan {
@@ -902,36 +940,85 @@
 }
 .home-blog-block .post-archive.col {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+  gap: 32px;
 }
-@media screen and (max-width: 1399.9px) {
+@media screen and (max-width: 1023.9px) {
   .home-blog-block .post-archive.col {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 24px;
   }
 }
-@media screen and (min-width: 999.9px) {
+@media screen and (max-width: 519.9px) {
   .home-blog-block .post-archive.col {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 }
 .home-blog-block .post-archive.col .post-archive-item {
-  display: block;
-  border: none;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
+.home-blog-block .post-archive.col .post-archive-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.home-blog-block .post-archive.col .post-archive-item > p:first-child {
+  overflow: hidden;
+  margin: 0;
+  line-height: 0;
+}
+.home-blog-block .post-archive.col .post-archive-item > p:first-child a {
+  display: block;
+}
 .home-blog-block .post-archive.col .post-archive-item img {
-  margin-bottom: 10px;
+  margin-bottom: 0;
   width: 100%;
   height: 200px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.home-blog-block .post-archive.col .post-archive-item:hover img {
+  transform: scale(1.05);
 }
 @media screen and (max-width: 999.9px) {
   .home-blog-block .post-archive.col .post-archive-item img {
-    height: 25vw;
+    height: 180px;
   }
+}
+@media screen and (max-width: 519.9px) {
+  .home-blog-block .post-archive.col .post-archive-item img {
+    height: 200px;
+  }
+}
+.home-blog-block .post-archive.col .post-archive-item .item-txt {
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #000;
+  flex: 1;
+  margin: 0;
+}
+@media screen and (max-width: 519.9px) {
+  .home-blog-block .post-archive.col .post-archive-item .item-txt {
+    padding: 16px;
+    font-size: 14px;
+  }
+}
+.home-blog-block .post-archive.col .post-archive-item .item-txt a {
+  color: inherit;
+  text-decoration: none;
+}
+.home-blog-block .post-archive.col .post-archive-item .item-txt a:hover {
+  color: #2454C0;
 }
 @media screen and (max-width: 1399.9px) {
   .home-blog-block .com-btn {
