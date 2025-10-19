@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* Scss Document */
+/*=============================================================
+ フォーム
+=============================================================*/
+input[type=text], input[type=checkbox], input[type=email], input[type=tel], input[type=submit], input[type=button], button, textarea, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=submit], input[type=button], textarea, select {
+  box-sizing: border-box;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid #CDD6DD;
+  background-color: #fff;
+  font-family: "Noto Sans JP", sans-serif;
+  /*background-color: rgba(86,101,108,0.1);*/
+}
+@media screen and (min-width: 999.9px) {
+  input[type=text], input[type=email], input[type=tel], input[type=submit], input[type=button], textarea, select {
+    padding: 12px 18px;
+  }
+}
+
+input::placeholder {
+  color: #CDD6DD;
+}
+
+input:focus {
+  border-color: #00A38D;
+  color: #202A2E;
+}
+
+input:invalid {
+  border-color: #D40707;
+}
+
+textarea {
+  width: 100%;
+  min-height: 195px;
+  resize: vertical;
+  line-height: 1.65;
+}
+
+label {
+  display: block;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: 2px #202A2E solid;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+input[type=checkbox]:checked {
+  background: url("../image/common/ico_checkbox.png") no-repeat center center;
+  background-size: cover;
+  background-color: #00A38D;
+  border-color: #00A38D;
+}
+
+.checkbox {
+  display: inline-block;
+  position: relative;
+  margin-top: 13px;
+}
+
+.checkbox:hover:before {
+  content: "";
+  display: block;
+  background-color: #F3F3F3;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -25px;
+  margin-left: -13px;
+}
+
+/*input[type="checkbox"]:checked:before {
+	content: "";
+	position: absolute;
+	left: 2px;
+	top: 50%;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}*/
+input[type=submit], input[type=button] {
+  border: none;
+  padding: 15px 0;
+  color: #FFF;
+  cursor: pointer;
+  max-width: 300px;
+  display: inline-block;
+  background: none;
+  background: url("../image/common/ico_arrow_w.png") no-repeat 95% center;
+  background-size: auto 12px;
+  background-color: #2454C0;
+  border-radius: 5px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+}
+input[type=submit]:hover, input[type=button]:hover {
+  color: #FFF;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.select_arrow01 {
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  background-color: rgba(86, 101, 108, 0.1);
+  border-radius: 5px;
+}
+.select_arrow01 select {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.select_arrow01 select::-ms-expand {
+  display: none;
+}
+.select_arrow01::before {
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 9px solid #2454C0;
+  pointer-events: none;
+  margin-top: -4.5px;
+}
+
+/*=============================================================
+ コンタクトフォーム7の設定
+=============================================================*/
+/* 送信ボタンの余白調整*/
+.wpcf7-spinner {
+  display: none !important;
+}
+
+/* 確認画面のボタンの余白調整*/
+.wpcf7-previous {
+  margin-left: 20px;
+}
+
+/* チェックボックス挿入時の改行*/
+.wpcf7-checkbox .wpcf7-list-item {
+  display: block;
+  margin: 0;
+}
+
+/*=============================================================
+ mw_wp_formフォームの設定
+=============================================================*/
+.mw_wp_form_preview .select_arrow01 {
+  background: none;
+}
+
+.mw_wp_form_preview .select_arrow01::before {
+  display: none;
+}/*# sourceMappingURL=form.css.map */

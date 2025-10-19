@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/NotoSansCJKj/NotoSansCJKjp-Regular.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/NotoSansCJKj/NotoSansCJKjp-Medium.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/NotoSansCJKj/NotoSansCJKjp-Bold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 900;
+  src: url('fonts/NotoSansCJKj/NotoSansCJKjp-Black.woff') format('woff');
+  font-display: swap;
+}
+.fnt_NotoSans {
+  font-family: "Noto Sans JP", sans-serif;
+}

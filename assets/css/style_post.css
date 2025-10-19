@@ -1,0 +1,342 @@
+@charset "UTF-8";
+/* Scss Document */
+/*=============================================================
+ 共通
+=============================================================*/
+.post .categories-list li {
+  display: inline-block;
+  margin-top: 10px;
+}
+.post .categories-list li a {
+  display: block;
+  background-color: rgba(36, 84, 192, 0.5);
+  border-radius: 90px;
+  padding: 0.5em 1em;
+  color: #fff;
+  line-height: 1.2em;
+}
+.post .cate a {
+  display: inline-block;
+  background-color: #2454C0;
+  color: #fff;
+  margin-right: 2px;
+  padding: 0.2em 0.5em;
+  font-size: 1.5vw;
+}
+@media screen and (min-width: 999.9px) {
+  .post .cate a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 519.9px) {
+  .post .cate a {
+    font-size: 2.5vw;
+  }
+}
+.post .tag a {
+  position: relative;
+  display: inline-block;
+  color: #2454C0;
+  margin-right: 1em;
+  font-size: 1.5vw;
+}
+@media screen and (min-width: 999.9px) {
+  .post .tag a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 519.9px) {
+  .post .tag a {
+    font-size: 2.5vw;
+  }
+}
+.post .tag a:before {
+  content: "#";
+  display: inline-block;
+}
+.post .archive {
+  position: relative;
+  text-align: left;
+  background-color: rgba(207, 217, 241, 0.2);
+  padding-top: 6vw;
+  padding-bottom: 6vw;
+}
+@media screen and (min-width: 999.9px) {
+  .post .archive {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 519.9px) {
+  .post .archive {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+}
+.post .archive .col3 {
+  display: grid;
+  gap: 5vw;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media screen and (min-width: 999.9px) {
+  .post .archive .col3 {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 999.9px) {
+  .post .archive .col3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.post .archive .col3 .date {
+  margin-top: 10px;
+}
+.post .archive .col3 .cate {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.post .archive .item {
+  position: relative;
+}
+.post .archive .item:first-child {
+  margin-top: 0;
+}
+@media screen and (max-width: 999.9px) {
+  .post .archive .item:last-child {
+    display: none;
+  }
+}
+.post .archive .item .thumbnail img {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+}
+@media screen and (min-width: 999.9px) {
+  .post .archive .item .thumbnail img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 519.9px) {
+  .post .archive .item .thumbnail img {
+    height: 30vw;
+  }
+}
+.post .archive .item .title {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 2vw;
+}
+@media screen and (min-width: 999.9px) {
+  .post .archive .item .title {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 519.9px) {
+  .post .archive .item .title {
+    font-size: 3vw;
+  }
+}
+.post .archive .txt-list {
+  border-top: 1px solid #ccc;
+  margin-top: 6vw;
+}
+@media screen and (min-width: 999.9px) {
+  .post .archive .txt-list {
+    margin-top: 80px;
+  }
+}
+.post .archive .txt-list .item {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0 2vw;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+@media screen and (min-width: 999.9px) {
+  .post .archive .txt-list .item {
+    gap: 0 20px;
+  }
+}
+.post .archive .txt-list .item .date {
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+@media screen and (min-width: 999.9px) {
+  .post .archive .txt-list .item .date {
+    width: auto;
+    padding-top: 20px;
+  }
+}
+.post .archive .txt-list .item .title {
+  margin-top: 1em;
+}
+@media screen and (min-width: 999.9px) {
+  .post .archive .txt-list .item .title {
+    width: 70%;
+    margin-top: 0;
+  }
+}
+.post .single {
+  position: relative;
+  text-align: left;
+  background-color: rgba(207, 217, 241, 0.2);
+  padding: 0 0 6vw 0;
+}
+@media screen and (min-width: 999.9px) {
+  .post .single {
+    padding: 80px 0;
+  }
+}
+.post .single .container {
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 4vw;
+}
+@media screen and (min-width: 999.9px) {
+  .post .single .container {
+    padding: 80px;
+  }
+}
+.post .single .title {
+  font-size: 2.5vw;
+  margin: 0.5em 0;
+}
+@media screen and (min-width: 999.9px) {
+  .post .single .title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 519.9px) {
+  .post .single .title {
+    font-size: 4vw;
+  }
+}
+.post .single .cate {
+  margin-bottom: 0.5em;
+}
+.post .single .thumbnail {
+  text-align: center;
+  margin-top: 20px;
+}
+.post .single .thumbnail img {
+  width: 700px;
+  max-width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+.post .single .post-area {
+  margin-top: 6vw;
+}
+@media screen and (min-width: 999.9px) {
+  .post .single .post-area {
+    margin-top: 60px;
+  }
+}
+.post .single .post-area #ez-toc-container {
+  margin-bottom: 40px;
+}
+.post .single .post-area h2 {
+  color: #2454C0;
+  border-bottom: 1px solid #A6A6A7;
+  position: relative;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 2.5vw;
+}
+@media screen and (min-width: 999.9px) {
+  .post .single .post-area h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 519.9px) {
+  .post .single .post-area h2 {
+    font-size: 3.8vw;
+  }
+}
+.post .single .post-area h2:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #A6A6A7;
+  margin-bottom: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+.post .single .post-area h3 {
+  background-color: #E9E9E9;
+  padding: 0.5em;
+  margin: 1em 0 0.5em 0;
+  font-size: 2vw;
+}
+@media screen and (min-width: 999.9px) {
+  .post .single .post-area h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 519.9px) {
+  .post .single .post-area h3 {
+    font-size: 3.5vw;
+  }
+}
+.post .single .post-area h4 {
+  margin: 1em 0 0.5em 0;
+  font-size: 1.8vw;
+}
+@media screen and (min-width: 999.9px) {
+  .post .single .post-area h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 519.9px) {
+  .post .single .post-area h4 {
+    font-size: 3.3vw;
+  }
+}
+.post .single .post-area ul,
+.post .single .post-area ol {
+  margin-left: 1.5em;
+}
+.post .single .post-area .alignleft {
+  display: block;
+  margin-right: auto;
+  margin-left: 0;
+}
+.post .single .post-area .aligncenter {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.post .single .post-area .alignright {
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+}
+.post .single .writer {
+  border: 1px solid #ccc;
+  margin-top: 50px;
+  padding: 30px;
+}
+.post .single .writer-tit {
+  margin: 0 0 1em 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1em;
+}
+.post .single .writer-col {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 150px 1fr;
+}
+.post .single .writer-col-right-name {
+  margin: 0 0 0.5em 0;
+}
+.post .single .writer-col-right-message {
+  font-size: 15px;
+}
+.post .single .com_wp_btn01 {
+  margin-top: 50px;
+}/*# sourceMappingURL=style_post.css.map */

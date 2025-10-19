@@ -1,0 +1,31 @@
+<?php
+get_header();
+$cat_info = get_category($cat);
+?>
+<div class="post">
+	<article class="archive reset">
+	<?php if ( get_post_type() === 'post' ) : ?>
+	<?php if(is_archive()) : ?>
+	<?php get_template_part( 'temp/post/_archive_blog_slide' ); ?>
+	<?php endif; ?>
+	<?php elseif (is_post_type_archive('stories')): ?>
+	<?php get_template_part( 'temp/post/_archive_stories_slide' ); ?>
+	<?php endif; ?>
+		 <div class="container">
+			 <?php if (get_post_type() === 'stories'): ?><?php get_template_part( 'temp/post/_archive_stories' ); ?>
+			 <?php elseif (get_post_type() === 'news'): ?>
+			 <?php get_template_part( 'temp/post/_archive_news' ); ?>
+			 <?php elseif(is_archive() || is_single() ||is_page( array( 'blog' ) )) : ?>
+			 <?php get_template_part( 'temp/post/_archive_blog' ); ?>
+			 <?php endif; ?>
+			 <?php if (is_post_type_archive('stories')): ?>
+			<!--　アーカイブページナビ -->
+			<div class="com_wp_pagenavi">
+				<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+			</div>
+			<!--　/アーカイブページナビ --> 
+			<?php endif; ?>
+		 </div>
+	</article>	
+</div>
+<?php get_footer(); ?>

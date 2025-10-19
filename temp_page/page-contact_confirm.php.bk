@@ -1,0 +1,21 @@
+<?php
+    /*
+    Template Name: お問い合わせ（確認画面）
+    Template Post Type: page
+    Template Path: temp_page/
+    */
+?>
+
+<?php get_header();?>
+
+<div class="reset">
+<section class="contact-sec01">
+	<div class="contact-sec01-block">
+        <div class="container"><p class="contact-sec01-block-lead">以下内容で送信されます<br>なお、内容により返信できない場合や、返答までに日数を要する場合がありますので、あらかじめご了承ください。 </p>
+			<?php echo do_shortcode('[contact-form-7 id="15eac54" title="お問い合わせ確認"]'); ?>
+        </div>
+	</div>
+</section>
+	<?php get_template_part( 'temp/_cv-resources' ); ?>
+</div>
+<?php get_footer(); ?>
