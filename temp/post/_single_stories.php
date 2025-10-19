@@ -25,10 +25,6 @@
 								<td><?php the_title(); ?></td>
 							</tr>
 							<?php if( get_field('stories_communitycolleg') ):?>
-							<tr>
-								<th>コミカレ名</th>
-								<td><?php the_field('stories_communitycolleg'); ?></td>
-							</tr>
 							<?php endif; ?>	
 							<?php if( get_field('stories_university') ):?>
 							<tr>
@@ -38,7 +34,7 @@
 							<?php endif; ?>	
 							<?php if( get_field('stories_company') ):?>
 							<tr>
-								<th>所属</th>
+								<th>メジャー</th>
 								<td><?php the_field('stories_company'); ?></td>
 							</tr>
 							<?php endif; ?>	
@@ -93,12 +89,6 @@
 								<th>名前</th>
 								<td><?php the_title(); ?></td>
 							</tr>
-							<?php if( get_field('stories_communitycolleg') ):?>
-							<tr>
-								<th>コミカレ名</th>
-								<td><?php the_field('stories_communitycolleg'); ?></td>
-							</tr>
-							<?php endif; ?>	
 							<?php if( get_field('stories_university') ):?>
 							<tr>
 								<th>大学名</th>
@@ -107,7 +97,7 @@
 							<?php endif; ?>	
 							<?php if( get_field('stories_company') ):?>
 							<tr>
-								<th>勤務先</th>
+								<th>メジャー</th>
 								<td><?php the_field('stories_company'); ?></td>
 							</tr>
 							<?php endif; ?>	
@@ -124,4 +114,3 @@
 		</section>
 	<?php the_content(); ?>
 <?php endif; ?>	
-
