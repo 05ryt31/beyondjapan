@@ -58,7 +58,6 @@
 					<div class="box-02">
 						<div class="box-02-col">
 							<div class="box-02-right">
-								<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/about/yutaro_pic.jpg" alt=""/></p>
 							</div>
 							<div class="box-02-left">
 								<div class="name-box">
@@ -80,19 +79,6 @@
 					<div>
 						<div class="box-03">
 							<div class="box-03-right">
-								<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/about/kouji_pic.jpg" alt=""/></p>
-							</div>
-							<div class="box-03-left">
-								<div class="name-box">
-									<p class="name-txt01">株式会社 Beyond Japan 役員</p>
-									<p class="name-txt02">大好　洪史<span>Kouji Oyoshi</span></p>
-									<p class="name-btn"><a href="<?php echo home_url('/stories/studyabroad/59/'); ?>">留学体験記を見る</a></p>
-								</div>
-							</div>
-						</div>
-						<div class="box-03">
-							<div class="box-03-right">
-								<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/about/ryuto_pic.jpg" alt=""/></p>
 							</div>
 							<div class="box-03-left">
 								<div class="name-box">
