@@ -32,7 +32,7 @@
 								<p class="lead"><?php the_field('stories_title'); ?></p>
 								<p class="name"><?php the_title(); ?></p>
 								<dl>
-									<dt>コミカレ名</dt>
+									<dt>役職</dt>
 									<dd><?php the_field('stories_communitycolleg'); ?></dd>
 								</dl>
 								<p><b><?php the_field('stories_university'); ?></b>　編入</p>

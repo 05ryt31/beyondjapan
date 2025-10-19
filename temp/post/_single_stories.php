@@ -34,7 +34,7 @@
 							<?php endif; ?>	
 							<?php if( get_field('stories_company') ):?>
 							<tr>
-								<th>メジャー</th>
+								<th>所属</th>
 								<td><?php the_field('stories_company'); ?></td>
 							</tr>
 							<?php endif; ?>	
