@@ -938,9 +938,10 @@
 .about-header {
   margin-bottom: 60px;
   color: #333;
+  text-align: center;
 }
 .about-header .en {
-  margin: 0 0 20px 0;
+  margin: 0 0 35px 0;
   line-height: 1;
   color: #2454C0;
   font-size: 40px;
@@ -954,7 +955,8 @@
 .about-header .ja {
   margin: 0;
   line-height: 1;
-  font-size: 40px;
+  font-size: 4vw;
+  text-align: center;
 }
 @media screen and (max-width: 519.9px) {
   .about-header .ja {
@@ -999,18 +1001,19 @@
 .about-sec01-block p {
   margin-top: 2em;
   line-height: 2.8;
-  font-size: 18px;
+  font-size: 3px;
   text-align: left;
   font-weight: 700;
 }
 @media screen and (min-width: 999.9px) {
   .about-sec01-block p {
+    font-size: 26px;
     text-align: center;
   }
 }
 @media screen and (max-width: 519.9px) {
   .about-sec01-block p {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 }
 .about-sec01-block p:first-of-type {
