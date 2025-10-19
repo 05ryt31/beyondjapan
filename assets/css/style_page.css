@@ -958,6 +958,11 @@
   font-size: 4vw;
   text-align: center;
 }
+@media screen and (min-width: 999.9px) {
+  .about-header .ja {
+    font-size: 40px;
+  }
+}
 @media screen and (max-width: 519.9px) {
   .about-header .ja {
     font-size: 8vw;
@@ -1001,13 +1006,13 @@
 .about-sec01-block p {
   margin-top: 2em;
   line-height: 2.8;
-  font-size: 3px;
+  font-size: 3vw;
   text-align: left;
   font-weight: 700;
 }
 @media screen and (min-width: 999.9px) {
   .about-sec01-block p {
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
   }
 }
