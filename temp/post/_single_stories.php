@@ -98,7 +98,7 @@
 							<?php if( get_field('stories_company') ):?>
 							<tr>
 								<th>メジャー</th>
-								<td><?php the_field('stories_company'); ?></td>
+								<td><?php the_field('stories_major'); ?></td>
 							</tr>
 							<?php endif; ?>	
 							<?php if( get_field('stories_post') ):?>
