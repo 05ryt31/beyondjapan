@@ -33,7 +33,7 @@
 								<p class="name"><?php the_title(); ?></p>
 								<dl>
 									<dt>役職</dt>
-									<dd><?php the_field('stories_communitycolleg'); ?></dd>
+									<dd><?php the_field('stories_position'); ?></dd>
 								</dl>
 								<p><b><?php the_field('stories_university'); ?></b>　編入</p>
 								<p class="link"><a href="<?php the_permalink(); ?>?post_id=<?php echo $post->ID; ?>">詳しく見る<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow02.png" alt=""/></a></p>
