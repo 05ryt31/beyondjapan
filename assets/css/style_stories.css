@@ -469,32 +469,6 @@
 }
 
 /* レスポンシブ対応 */
-@media screen and (max-width: 768px) {
-  .note-article {
-    padding: 40px 16px;
-  }
-  
-  .note-title {
-    font-size: 1.5rem;
-  }
-  
-  .note-author {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .author-info {
-    text-align: center;
-  }
-  
-  .content-body {
-    font-size: 0.9rem;
-  }
-  
-  #ez-toc-container {
-    padding: 16px;
-  }
-}
 /* アーカイブページ用の既存スタイルは保持 */
 .stories-title {
   padding: 20px 0;
