@@ -77,4 +77,21 @@ if(imageSwitch){
 			},200);
 		});
 	});
+}
+
+/* Note風 History/目次の折りたたみ機能
+------------------------------------- */
+function toggleHistory() {
+	var body = document.getElementById('history-body');
+	var icon = document.getElementById('history-icon');
+	
+	if (body.classList.contains('expanded')) {
+		body.classList.remove('expanded');
+		body.classList.add('collapsed');
+		icon.classList.add('collapsed');
+	} else {
+		body.classList.remove('collapsed');
+		body.classList.add('expanded');
+		icon.classList.remove('collapsed');
+	}
 }	
