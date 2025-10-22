@@ -15,7 +15,7 @@
 			<h1 class="note-title">
 				<?php 
 				$custom_title = get_post_meta($post->ID, 'stories_title', true);
-				echo $custom_title ? nl2br($custom_title) : get_the_title();
+				echo $custom_title ? nl2br(esc_html($custom_title)) : get_the_title();
 				?>
 			</h1>
 			
