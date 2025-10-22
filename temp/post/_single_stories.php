@@ -68,6 +68,32 @@
 					<?php the_content(); ?>
 				</div>
 			<?php endif; ?>
+			
+			<?php if( have_rows('stories_history') ): ?>
+			<div class="note-history-section">
+				<div class="note-history-header">
+					<button class="note-history-toggle" onclick="toggleHistory()">
+						<span class="note-history-icon" id="history-icon"></span>
+						<h3 class="note-history-title">経歴・ヒストリー</h3>
+					</button>
+				</div>
+				<div class="note-history-body expanded" id="history-body">
+					<ol class="note-history-list">
+						<?php while( have_rows('stories_history') ): the_row(); 
+							$year = get_sub_field('year');
+							$content = get_sub_field('content');
+						?>
+						<li class="note-history-item">
+							<div class="note-history-link">
+								<span class="year"><?php echo esc_html($year); ?></span>
+								<span class="content"><?php echo esc_html($content); ?></span>
+							</div>
+						</li>
+						<?php endwhile; ?>
+					</ol>
+				</div>
+			</div>
+			<?php endif; ?>
 		</div>
 	</div>
 </article>	

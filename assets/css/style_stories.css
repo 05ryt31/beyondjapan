@@ -967,128 +967,174 @@
 .post .single .profile-col table tr:first-child td {
   border-top: 1px solid #ccc;
 }
-.post .single .history {
-  padding: 8vw 5vw;
+/* Note風 History/目次スタイル */
+.note-history-section {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 0;
+  margin: 2em 0;
+  max-width: 100%;
+  overflow: hidden;
 }
-@media screen and (min-width: 999.9px) {
-  .post .single .history {
-    padding: 80px 50px 80px 50px;
-  }
-}
-.post .single .history-block {
+
+.note-history-header {
+  background-color: #fff;
+  border-bottom: 1px solid #e9ecef;
+  padding: 16px 20px;
   position: relative;
 }
-.post .single .history-block:after {
-  content: "";
-  display: block;
-  width: 2px;
-  height: 90%;
-  background-color: #2454C0;
-  position: absolute;
-  top: 0;
-  left: 24px;
-}
-@media screen and (min-width: 999.9px) {
-  .post .single .history-block:after {
-    height: 93%;
-  }
-}
-.post .single .history-block-item {
-  display: flex;
-  gap: 0 50px;
-  text-align: left;
-  flex-flow: row wrap;
-  position: relative;
-  padding: 0 0 10vw 70px;
-}
-@media screen and (min-width: 999.9px) {
-  .post .single .history-block-item {
-    padding: 0 0 100px 70px;
-  }
-}
-.post .single .history-block-item:before {
-  content: "";
+
+.note-history-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  color: #08131a;
   display: flex;
   align-items: center;
-  justify-content: center;
+  cursor: pointer;
+}
+
+.note-history-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+
+.note-history-icon {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.note-history-icon.collapsed {
+  transform: rotate(-90deg);
+}
+
+.note-history-icon::before {
+  content: "▼";
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.note-history-body {
+  padding: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.note-history-body.collapsed {
+  max-height: 0;
+}
+
+.note-history-body.expanded {
+  max-height: 1000px;
+}
+
+.note-history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.note-history-item {
+  border-bottom: 1px solid #f1f3f4;
+  transition: background-color 0.2s ease;
+}
+
+.note-history-item:last-child {
+  border-bottom: none;
+}
+
+.note-history-item:hover {
+  background-color: #f8f9fa;
+}
+
+.note-history-link {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #495057;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.note-history-link:hover {
+  color: #08131a;
+  background-color: #f8f9fa;
+}
+
+.note-history-link .year {
+  font-weight: 600;
+  color: #08131a;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.note-history-link .content {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+/* アクティブ状態 */
+.note-history-item.active .note-history-link {
+  background-color: #e3f2fd;
+  color: #08131a;
+  border-left: 3px solid #1976d2;
+}
+
+/* 展開/折りたたみボタン */
+.note-history-more {
+  padding: 12px 20px;
+  text-align: center;
+  border-top: 1px solid #e9ecef;
+  background-color: #f8f9fa;
+}
+
+.note-history-more-button {
+  background: none;
+  border: 1px solid #dee2e6;
+  border-radius: 16px;
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  color: #6c757d;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.note-history-more-button:hover {
+  background-color: #08131a;
   color: #fff;
-  width: 50px;
-  height: 50px;
-  background-color: #2454C0;
-  border-radius: 100%;
-  z-index: 2;
-  font-size: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  border-color: #08131a;
 }
-.post .single .history-block-item:nth-child(1):before {
-  content: "1";
-}
-.post .single .history-block-item:nth-child(2):before {
-  content: "2";
-}
-.post .single .history-block-item:nth-child(3):before {
-  content: "3";
-}
-.post .single .history-block-item:nth-child(4):before {
-  content: "4";
-}
-.post .single .history-block-item:nth-child(5):before {
-  content: "5";
-}
-.post .single .history-block-item:nth-child(6):before {
-  content: "6";
-}
-.post .single .history-block-item:nth-child(7):before {
-  content: "7";
-}
-.post .single .history-block-item:nth-child(8):before {
-  content: "8";
-}
-.post .single .history-block-item:nth-child(9):before {
-  content: "9";
-}
-.post .single .history-block-item:nth-child(10):before {
-  content: "10";
-}
-.post .single .history-block-item:last-of-type {
-  padding-bottom: 0;
-}
-.post .single .history-block-item .year {
-  font-weight: 600;
-  font-size: 3vw;
-}
-@media screen and (min-width: 999.9px) {
-  .post .single .history-block-item .year {
-    font-size: 20px;
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+  .note-history-section {
+    margin: 1.5em 0;
   }
-}
-@media screen and (max-width: 519.9px) {
-  .post .single .history-block-item .year {
-    font-size: 4vw;
+  
+  .note-history-header {
+    padding: 12px 16px;
   }
-}
-@media screen and (min-width: 999.9px) {
-  .post .single .history-block-item dl {
-    width: 84%;
-    margin-left: auto;
+  
+  .note-history-title {
+    font-size: 1rem;
   }
-}
-.post .single .history-block-item dl dt {
-  color: #2454C0;
-  font-weight: 600;
-  margin-bottom: 0.5em;
-  font-size: 3vw;
-}
-@media screen and (min-width: 999.9px) {
-  .post .single .history-block-item dl dt {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 519.9px) {
-  .post .single .history-block-item dl dt {
-    font-size: 4vw;
+  
+  .note-history-link {
+    padding: 10px 16px;
+    font-size: 0.85rem;
   }
 }
 .post .single .interview {
