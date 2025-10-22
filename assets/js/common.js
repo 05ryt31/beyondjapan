@@ -94,4 +94,68 @@ function toggleHistory() {
 		body.classList.add('expanded');
 		icon.classList.remove('collapsed');
 	}
-}	
+}
+
+/* Goodpatch風 ブログ記事目次の自動生成
+------------------------------------- */
+document.addEventListener('DOMContentLoaded', function() {
+	// 目次の自動生成（ブログ記事用）
+	function generateTableOfContents() {
+		var tocContainer = document.getElementById('article-toc');
+		if (!tocContainer) return;
+		
+		var articleBody = document.querySelector('.article-body');
+		if (!articleBody) return;
+		
+		var headings = articleBody.querySelectorAll('h2, h3, h4');
+		if (headings.length === 0) {
+			tocContainer.innerHTML = '<p style="color: #6b7280; font-size: 0.875rem;">目次項目がありません</p>';
+			return;
+		}
+		
+		var tocList = document.createElement('ul');
+		tocList.className = 'toc-list';
+		
+		headings.forEach(function(heading, index) {
+			// 見出しにIDを追加
+			if (!heading.id) {
+				heading.id = 'heading-' + index;
+			}
+			
+			var listItem = document.createElement('li');
+			listItem.className = 'toc-item ' + heading.tagName.toLowerCase();
+			
+			var link = document.createElement('a');
+			link.href = '#' + heading.id;
+			link.textContent = heading.textContent;
+			link.addEventListener('click', function(e) {
+				e.preventDefault();
+				document.getElementById(heading.id).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+			
+			listItem.appendChild(link);
+			tocList.appendChild(listItem);
+		});
+		
+		tocContainer.appendChild(tocList);
+	}
+	
+	// ページ読み込み時に目次を生成
+	generateTableOfContents();
+	
+	// スムーススクロールの強化
+	document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+		anchor.addEventListener('click', function(e) {
+			e.preventDefault();
+			var target = document.querySelector(this.getAttribute('href'));
+			if (target) {
+				target.scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				});
+			}
+		});
+	});
+});	
