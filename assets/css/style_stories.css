@@ -1036,7 +1036,7 @@
 }
 
 .note-history-body.expanded {
-  max-height: 1000px;
+  max-height: none;
 }
 
 .note-history-list {
