@@ -37,7 +37,7 @@
 						$custom_title = get_field('stories_title');
 						$display_title = $custom_title ? $custom_title : get_the_title();
 						$text = mb_substr($display_title, 0, 60, 'utf-8');
-						echo mb_strlen($display_title) > 60 ? $text.'...' : $text;
+						echo esc_html(mb_strlen($display_title) > 60 ? $text.'...' : $text);
 						?>
 					</h2>
 					<div class="card-author">
