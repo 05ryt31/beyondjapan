@@ -22,7 +22,7 @@
 			</div>
 			<h2 class="blog-card-title"><?php the_title(); ?></h2>
 			<?php if(has_excerpt()): ?>
-				<p class="blog-card-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
+				<p class="blog-card-excerpt"><?php echo esc_html( wp_trim_words( get_the_excerpt(), 20 ) ); ?></p>
 			<?php endif; ?>
 			<?php $tags = get_the_tags(); if($tags): ?>
 				<div class="blog-card-tags">
