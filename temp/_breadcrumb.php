@@ -6,7 +6,7 @@
 			<?php the_archive_title(); ?>
 			<?php endif; ?>
 			<?php if(is_single() ) : ?>
-			<a href="/blog/">お役立ちブログ</a>
+			<a href="/blog/">ブログ</a>
 			<!--<?php
 			$category = get_the_category();
 			if ( $category[ 0 ] ) {
