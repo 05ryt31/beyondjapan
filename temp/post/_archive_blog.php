@@ -1,10 +1,22 @@
-    <div class="scloll">
-	<ul class="categories-tabs js-switch-tabs">
-		<li class="active">全て</li>
-		<li>カテゴリー01</li>
-		<li>カテゴリー02</li>
-		<li>カテゴリー03</li>
-	</ul>
+<div class="note-blog-archive">
+	<div class="blog-archive-header">
+		<div class="container">
+			<h1 class="archive-title">ブログ</h1>
+			<p class="archive-description">留学やキャリアに関する最新情報をお届けします</p>
+		</div>
+	</div>
+	
+	<div class="blog-filter-section">
+		<div class="container">
+			<div class="filter-tabs">
+				<ul class="categories-tabs js-switch-tabs">
+					<li class="active">全て</li>
+					<li>カテゴリー01</li>
+					<li>カテゴリー02</li>
+					<li>カテゴリー03</li>
+				</ul>
+			</div>
+		</div>
 	</div>	
 	<div class="js-switch-content active">
 		<div id="item-list" data-category="" data-begin="0">

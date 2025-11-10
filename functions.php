@@ -335,30 +335,30 @@ add_action( 'init', 'create_post_type', 0 );
 
 // 投稿のラベルを変更
 function custom_post_labels( $labels ) {
-	$labels->name = 'お役立ちブログ'; // 投稿
-	$labels->singular_name = 'お役立ちブログ'; // 投稿
+	$labels->name = 'ブログ'; // 投稿
+	$labels->singular_name = 'ブログ'; // 投稿
 	$labels->add_new = '新規追加'; // 新規追加
-	$labels->add_new_item = 'お役立ちブログを追加'; // 新規投稿を追加
-	$labels->edit_item = '投稿の編集'; // 投稿の編集
-	$labels->new_item = '新規お役立ちブログ'; // 新規投稿
-	$labels->view_item = 'お役立ちブログを表示'; // 投稿を表示
-	$labels->search_items = 'お役立ちブログを検索'; // 投稿を検索
-	$labels->not_found = 'お役立ちブログが見つかりませんでした。'; // 投稿が見つかりませんでした。
-	$labels->not_found_in_trash = 'ゴミ箱内にお役立ちブログが見つかりませんでした。'; // ゴミ箱内に投稿が見つかりませんでした。
+	$labels->add_new_item = 'ブログを追加'; // 新規投稿を追加
+	$labels->edit_item = 'ブログの編集'; // 投稿の編集
+	$labels->new_item = '新規ブログ'; // 新規投稿
+	$labels->view_item = 'ブログを表示'; // 投稿を表示
+	$labels->search_items = 'ブログを検索'; // 投稿を検索
+	$labels->not_found = 'ブログが見つかりませんでした。'; // 投稿が見つかりませんでした。
+	$labels->not_found_in_trash = 'ゴミ箱内にブログが見つかりませんでした。'; // ゴミ箱内に投稿が見つかりませんでした。
 	$labels->parent_item_colon = ''; // (なし)
-	$labels->all_items = 'お役立ちブログ一覧'; // 投稿一覧
-	$labels->archives = 'お役立ちブログアーカイブ'; // 投稿アーカイブ
-	$labels->insert_into_item = 'お役立ちブログに挿入'; // 投稿に挿入
-	$labels->uploaded_to_this_item = 'このお役立ちブログへのアップロード'; // この投稿へのアップロード
+	$labels->all_items = 'ブログ一覧'; // 投稿一覧
+	$labels->archives = 'ブログアーカイブ'; // 投稿アーカイブ
+	$labels->insert_into_item = 'ブログに挿入'; // 投稿に挿入
+	$labels->uploaded_to_this_item = 'このブログへのアップロード'; // この投稿へのアップロード
 	$labels->featured_image = 'アイキャッチ画像'; // アイキャッチ画像
 	$labels->set_featured_image = 'アイキャッチ画像を設定'; // アイキャッチ画像を設定
 	$labels->remove_featured_image = 'アイキャッチ画像を削除'; // アイキャッチ画像を削除
 	$labels->use_featured_image = 'アイキャッチ画像として使用'; // アイキャッチ画像として使用
-	$labels->filter_items_list = 'お役立ちブログリストの絞り込み'; // 投稿リストの絞り込み
-	$labels->items_list_navigation = 'お役立ちブログリストナビゲーション'; // 投稿リストナビゲーション
-	$labels->items_list = 'お役立ちブログリスト'; // 投稿リスト
-	$labels->menu_name = 'お役立ちブログ'; // 投稿
-	$labels->name_admin_bar = 'お役立ちブログ'; // 投稿
+	$labels->filter_items_list = 'ブログリストの絞り込み'; // 投稿リストの絞り込み
+	$labels->items_list_navigation = 'ブログリストナビゲーション'; // 投稿リストナビゲーション
+	$labels->items_list = 'ブログリスト'; // 投稿リスト
+	$labels->menu_name = 'ブログ'; // 投稿
+	$labels->name_admin_bar = 'ブログ'; // 投稿
 	return $labels;
 }
 add_filter( 'post_type_labels_post', 'custom_post_labels' );

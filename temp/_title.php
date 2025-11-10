@@ -95,9 +95,9 @@
 			$cat_slug = $category[ 0 ]->category_nicename;
 			$cat_name = $category[ 0 ]->cat_name;
 			?>
-			<h1 class="ja">お役立ちブログ</h1>
+			<h1 class="ja">ブログ</h1>
 			<?php elseif(is_category() || is_single()) : ?>
-			<p class="ja"> お役立ちブログ</p>
+			<p class="ja"> ブログ</p>
 			<?php endif; ?>
 		</div>
 	</div>

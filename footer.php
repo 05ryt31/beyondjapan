@@ -42,7 +42,7 @@
 						<div class="footer-navi-list">
 						<ul>
 							<li><a href="<?php echo home_url('/news/'); ?>">お知らせ</a></li>
-							<li><a href="<?php echo home_url('/blog/'); ?>">お役立ちブログ</a></li>
+							<li><a href="<?php echo home_url('/blog/'); ?>">ブログ</a></li>
 							<li><a href="<?php echo home_url('/stories/'); ?>">留学体験記</a></li>
 							<li><a href="<?php echo home_url('/low/'); ?>">特定商取引法に基づく表示</a></li>
 							<li><a href="<?php echo home_url('/low/'); ?>">規約</a></li>
