@@ -335,30 +335,30 @@ add_action( 'init', 'create_post_type', 0 );
 
 // 投稿のラベルを変更
 function custom_post_labels( $labels ) {
-	$labels->name = 'ブログ'; // 投稿
-	$labels->singular_name = 'ブログ'; // 投稿
+	$labels->name = '留学情報ブログ'; // 投稿
+	$labels->singular_name = '留学情報ブログ'; // 投稿
 	$labels->add_new = '新規追加'; // 新規追加
-	$labels->add_new_item = 'ブログを追加'; // 新規投稿を追加
-	$labels->edit_item = 'ブログの編集'; // 投稿の編集
-	$labels->new_item = '新規ブログ'; // 新規投稿
-	$labels->view_item = 'ブログを表示'; // 投稿を表示
-	$labels->search_items = 'ブログを検索'; // 投稿を検索
-	$labels->not_found = 'ブログが見つかりませんでした。'; // 投稿が見つかりませんでした。
-	$labels->not_found_in_trash = 'ゴミ箱内にブログが見つかりませんでした。'; // ゴミ箱内に投稿が見つかりませんでした。
+	$labels->add_new_item = '留学情報ブログを追加'; // 新規投稿を追加
+	$labels->edit_item = '留学情報ブログの編集'; // 投稿の編集
+	$labels->new_item = '新規留学情報ブログ'; // 新規投稿
+	$labels->view_item = '留学情報ブログを表示'; // 投稿を表示
+	$labels->search_items = '留学情報ブログを検索'; // 投稿を検索
+	$labels->not_found = '留学情報ブログが見つかりませんでした。'; // 投稿が見つかりませんでした。
+	$labels->not_found_in_trash = 'ゴミ箱内に留学情報ブログが見つかりませんでした。'; // ゴミ箱内に投稿が見つかりませんでした。
 	$labels->parent_item_colon = ''; // (なし)
-	$labels->all_items = 'ブログ一覧'; // 投稿一覧
-	$labels->archives = 'ブログアーカイブ'; // 投稿アーカイブ
-	$labels->insert_into_item = 'ブログに挿入'; // 投稿に挿入
-	$labels->uploaded_to_this_item = 'このブログへのアップロード'; // この投稿へのアップロード
+	$labels->all_items = '留学情報ブログ一覧'; // 投稿一覧
+	$labels->archives = '留学情報ブログアーカイブ'; // 投稿アーカイブ
+	$labels->insert_into_item = '留学情報ブログに挿入'; // 投稿に挿入
+	$labels->uploaded_to_this_item = 'この留学情報ブログへのアップロード'; // この投稿へのアップロード
 	$labels->featured_image = 'アイキャッチ画像'; // アイキャッチ画像
 	$labels->set_featured_image = 'アイキャッチ画像を設定'; // アイキャッチ画像を設定
 	$labels->remove_featured_image = 'アイキャッチ画像を削除'; // アイキャッチ画像を削除
 	$labels->use_featured_image = 'アイキャッチ画像として使用'; // アイキャッチ画像として使用
-	$labels->filter_items_list = 'ブログリストの絞り込み'; // 投稿リストの絞り込み
-	$labels->items_list_navigation = 'ブログリストナビゲーション'; // 投稿リストナビゲーション
-	$labels->items_list = 'ブログリスト'; // 投稿リスト
-	$labels->menu_name = 'ブログ'; // 投稿
-	$labels->name_admin_bar = 'ブログ'; // 投稿
+	$labels->filter_items_list = '留学情報ブログリストの絞り込み'; // 投稿リストの絞り込み
+	$labels->items_list_navigation = '留学情報ブログリストナビゲーション'; // 投稿リストナビゲーション
+	$labels->items_list = '留学情報ブログリスト'; // 投稿リスト
+	$labels->menu_name = '留学情報ブログ'; // 投稿
+	$labels->name_admin_bar = '留学情報ブログ'; // 投稿
 	return $labels;
 }
 add_filter( 'post_type_labels_post', 'custom_post_labels' );

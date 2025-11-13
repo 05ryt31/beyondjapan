@@ -15,7 +15,7 @@
 					<li><a href="<?php echo home_url('/plan_canada/'); ?>">カナダ大学編入プラン</a></li>
 				</ul></li>
 				<li class=""><a href="<?php echo home_url('/stories/'); ?>">留学体験記</a></li>
-				<li class=""><a href="<?php echo home_url('/blog/'); ?>">ブログ</a></li>
+				<li class=""><a href="<?php echo home_url('/blog/'); ?>">留学情報ブログ</a></li>
 				<li class="dropdown-tit"><span>私たちについて</span>
 				<ul class="dropdown-menu">
 					<li><a href="<?php echo home_url('/about/'); ?>">私たちの想い</a></li>

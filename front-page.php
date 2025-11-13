@@ -335,7 +335,7 @@
 		<div class="home-blog-block">
 			<div class="container">
 				<p class="lead">知りたい情報を発信</p>
-				<h2 class="sec-tit">ブログ</h2>
+				<h2 class="sec-tit">留学情報ブログ</h2>
 <?php get_template_part( 'temp/_top_blog' ); ?>
 				<div>
 					<p class="com-btn btn01"><a href="<?php echo home_url('/blog/'); ?>">一覧を見る<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt=""/></a></p>
