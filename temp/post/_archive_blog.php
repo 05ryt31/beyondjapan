@@ -11,9 +11,9 @@
 			<div class="filter-tabs">
 				<ul class="categories-tabs js-switch-tabs">
 					<li class="active">全て</li>
-					<li>カテゴリー01</li>
-					<li>カテゴリー02</li>
-					<li>カテゴリー03</li>
+					<li>アメリカ</li>
+					<li>カナダ</li>
+					<li>その他</li>
 				</ul>
 			</div>
 		</div>
@@ -42,7 +42,7 @@
 				'order' => 'DESC',
 				'post_type' => 'post',
 				'post_status' => 'publish',
-				'category_name' => 'cate01' //カテゴリースラッグ
+				'category_name' => 'usa' //カテゴリースラッグ
 			);
 			$the_query = new WP_Query($args);
 			if ( $the_query->have_posts() ) :
@@ -51,7 +51,7 @@
 			<?php endwhile; endif; ?>
 			<?php wp_reset_postdata(); ?>
 		</div>
-		<p class="com-btn btn01"><a href="/blog/cate01/">カテゴリー01の一覧を見る</a></p>
+		<p class="com-btn btn01"><a href="/blog/usa/">ブログの一覧を見る</a></p>
 	</div>
 	<div class="js-switch-content">
 		<div class="col3">
@@ -64,7 +64,7 @@
 				'order' => 'DESC',
 				'post_type' => 'post',
 				'post_status' => 'publish',
-				'category_name' => 'cate02' //カテゴリースラッグ
+				'category_name' => 'canada' //カテゴリースラッグ
 			);
 			$the_query = new WP_Query($args);
 			if ( $the_query->have_posts() ) :
@@ -73,9 +73,8 @@
 			<?php endwhile; endif; ?>
 			<?php wp_reset_postdata(); ?>	
 		</div>
-		<p class="com-btn btn01"><a href="/blog/cate02/">カテゴリー02の一覧を見る</a></p>
+		<p class="com-btn btn01"><a href="/blog/canada/">ブログの一覧を見る</a></p>
 	</div>
-	<div class="js-switch-content">
 		<div class="col2">
 			<?php
 			$paged = (int) get_query_var('paged');
@@ -86,7 +85,7 @@
 				'order' => 'DESC',
 				'post_type' => 'post',
 				'post_status' => 'publish',
-				'category_name' => 'cate03' //カテゴリースラッグ
+				'category_name' => 'other' //カテゴリースラッグ
 			);
 			$the_query = new WP_Query($args);
 			if ( $the_query->have_posts() ) :
@@ -95,5 +94,4 @@
 			<?php endwhile; endif; ?>
 			<?php wp_reset_postdata(); ?>	
 		</div>
-		<p class="com-btn btn01"><a href="/blog/cate03/">カテゴリー03の一覧を見る</a></p>
-	</div>
+		<p class="com-btn btn01"><a href="/blog/other/">ブログの一覧を見る</a></p>
