@@ -32,7 +32,7 @@ jQuery(".more_btn").hide();
 jQuery(".loading").show();
 jQuery.ajax({
 type: "POST",
-url: window.location.origin + '/ajax-item.php',
+url: 'https://beyondjp.net/wp-content/themes/beyondjapan/ajax-item.php', // フルパスで指定
 data: {
 post_num_now: postNumNow,
 post_num_add: postNumAdd,
