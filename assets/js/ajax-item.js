@@ -15,8 +15,9 @@ loading2();
 function loading1(){
 jQuery.ajax({
 type: "POST",
-url: window.location.origin + '/ajax-item.php',
+url: ajaxurl,
 data: {
+action: 'load_blog_posts',
 post_num_now: postNumNow,
 post_num_add: postNumAdd,
 category_name: cat
@@ -32,8 +33,9 @@ jQuery(".more_btn").hide();
 jQuery(".loading").show();
 jQuery.ajax({
 type: "POST",
-url: 'https://beyondjp.net/wp-content/themes/beyondjapan/ajax-item.php', // フルパスで指定
+url: ajaxurl,
 data: {
+action: 'load_blog_posts',
 post_num_now: postNumNow,
 post_num_add: postNumAdd,
 category_name: cat
