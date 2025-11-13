@@ -15,7 +15,7 @@ loading2();
 function loading1(){
 jQuery.ajax({
 type: "POST",
-url: 'http://beyondjp.net/wp-content/themes/beyondjapan/ajax-item.php', // フルパスで指定
+url: window.location.origin + '/ajax-item.php',
 data: {
 post_num_now: postNumNow,
 post_num_add: postNumAdd,
@@ -32,7 +32,7 @@ jQuery(".more_btn").hide();
 jQuery(".loading").show();
 jQuery.ajax({
 type: "POST",
-url: 'http://beyondjp.net/wp-content/themes/beyondjapan/ajax-item.php', // フルパスで指定
+url: window.location.origin + '/ajax-item.php',
 data: {
 post_num_now: postNumNow,
 post_num_add: postNumAdd,
