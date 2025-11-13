@@ -92,7 +92,7 @@
 									</div>
 									<div class="rightBox">
 										<p class="item-lead">常識に囚われない留学の道</p>
-										<p class="item-price">奨学金<br> <span class="en">970</span>万円<small>（6万5千ドル）</small></p>
+										<p class="item-price">奨学金<br> <span class="en">1000</span>万円<small>（6万5千ドル）</small></p>
 										<p class="item-name"><small>コロンビア大学</small>池田 修飛さん</p>
 										<p class="com-btn btn02"><a href="/stories/usa/116/">詳しくはこちら</a></p>
 									</div>
@@ -105,7 +105,7 @@
 										<p class="item-lead">道筋を立て、日々考え、積み重ねる</p>
 										<p class="item-price">奨学金<br> <span class="en">740</span>万円<small>（5万ドル）</small></p>
 										<p class="item-name"><small>コロンビア大学</small>Kさん</p>
-										<p class="com-btn btn02"><a href="#">詳しくはこちら</a></p>
+										<p class="com-btn btn02"><a href="/stories/usa/39/">詳しくはこちら</a></p>
 									</div>
 								</div>
 							</div>

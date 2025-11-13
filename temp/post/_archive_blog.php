@@ -1,7 +1,7 @@
 <div class="note-blog-archive">
 	<div class="blog-archive-header">
 		<div class="container">
-			<h1 class="archive-title">ブログ</h1>
+			<h1 class="archive-title">留学情報ブログ</h1>
 			<p class="archive-description">留学やキャリアに関する最新情報をお届けします</p>
 		</div>
 	</div>
