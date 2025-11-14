@@ -5,7 +5,7 @@ $cat_info = get_category($cat);
 <div class="post">
 	<article class="archive reset">
 	<?php if ( get_post_type() === 'post' ) : ?>
-	<?php if(is_archive()) : ?>
+	<?php if( is_archive() && 'all' !== get_query_var( 'blog_scope' ) ) : ?>
 	<?php get_template_part( 'temp/post/_archive_blog_slide' ); ?>
 	<?php endif; ?>
 	<?php elseif (is_post_type_archive('stories')): ?>
@@ -16,7 +16,11 @@ $cat_info = get_category($cat);
 			 <?php elseif (get_post_type() === 'news'): ?>
 			 <?php get_template_part( 'temp/post/_archive_news' ); ?>
 			 <?php elseif(is_archive() || is_single() ||is_page( array( 'blog' ) )) : ?>
-			 <?php get_template_part( 'temp/post/_archive_blog' ); ?>
+			 	<?php if ( 'all' === get_query_var( 'blog_scope' ) ) : ?>
+			 		<?php get_template_part( 'temp/post/_archive_blog_all' ); ?>
+			 	<?php else : ?>
+			 		<?php get_template_part( 'temp/post/_archive_blog' ); ?>
+			 	<?php endif; ?>
 			 <?php endif; ?>
 			 <?php if (is_post_type_archive('stories')): ?>
 			<!--　アーカイブページナビ -->

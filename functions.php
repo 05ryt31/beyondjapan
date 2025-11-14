@@ -130,9 +130,37 @@ function post_has_archive( $args, $post_type ) {
 add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 ); 
 
 function add_blog_all_rewrite_rule() {
-	add_rewrite_rule( '^blog/all/?$', 'index.php?post_type=post', 'top' );
+	add_rewrite_rule( '^blog/all/?$', 'index.php?post_type=post&blog_scope=all', 'top' );
 }
 add_action( 'init', 'add_blog_all_rewrite_rule' );
+
+function add_blog_scope_query_var( $vars ) {
+	$vars[] = 'blog_scope';
+	return $vars;
+}
+add_filter( 'query_vars', 'add_blog_scope_query_var' );
+
+function adjust_blog_scope_query( $query ) {
+	if ( is_admin() || ! $query->is_main_query() ) {
+		return;
+	}
+
+	$scope = $query->get( 'blog_scope' );
+	if ( 'all' === $scope ) {
+		$query->set( 'post_type', 'post' );
+		$query->set( 'post_status', 'publish' );
+		$query->set( 'posts_per_page', 12 );
+		$query->set( 'orderby', 'date' );
+		$query->set( 'order', 'DESC' );
+	}
+}
+add_action( 'pre_get_posts', 'adjust_blog_scope_query' );
+
+function flush_blog_rewrite_rules_on_switch() {
+	add_blog_all_rewrite_rule();
+	flush_rewrite_rules();
+}
+add_action( 'after_switch_theme', 'flush_blog_rewrite_rules_on_switch' );
 
 
 function custom_admin_style() {
@@ -367,8 +395,4 @@ function custom_post_labels( $labels ) {
 	return $labels;
 }
 add_filter( 'post_type_labels_post', 'custom_post_labels' );
-
-global $wp_rewrite;
-$wp_rewrite->flush_rules();
-
 ?>
