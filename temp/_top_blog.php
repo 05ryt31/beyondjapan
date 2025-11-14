@@ -1,9 +1,9 @@
    <div class="scloll">	
 	   <ul class="home-blog-block-list js-switch-tabs">
 		   <li class="active">最新</li>
-		   <li>カテゴリー01</li>
-		   <li>カテゴリー02</li>
-		   <li>カテゴリー03</li>
+		   <li>アメリカ</li>
+		   <li>カナダ</li>
+		   <li>その他</li>
 	   </ul>
 	</div>
 	<div class="js-switch-content active">
@@ -37,7 +37,7 @@
 				'order' => 'DESC',
 				'post_type' => 'post',
 				'post_status' => 'publish',
-				'category_name' => 'cate01' //カテゴリースラッグ
+				'category_name' => 'usa' //カテゴリースラッグ
 			);
 			$the_query = new WP_Query($args);
 			if ( $the_query->have_posts() ) :
@@ -58,7 +58,7 @@
 				'order' => 'DESC',
 				'post_type' => 'post',
 				'post_status' => 'publish',
-				'category_name' => 'cate02' //カテゴリースラッグ
+				'category_name' => 'canada' //カテゴリースラッグ
 			);
 			$the_query = new WP_Query($args);
 			if ( $the_query->have_posts() ) :
@@ -79,7 +79,7 @@
 				'order' => 'DESC',
 				'post_type' => 'post',
 				'post_status' => 'publish',
-				'category_name' => 'cate03' //カテゴリースラッグ
+				'category_name' => 'other' //カテゴリースラッグ
 			);
 			$the_query = new WP_Query($args);
 			if ( $the_query->have_posts() ) :
