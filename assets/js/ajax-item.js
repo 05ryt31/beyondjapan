@@ -1,8 +1,12 @@
 jQuery(function() {
 /* 初期設定 */
 let el = document.getElementById("item-list");
+if (!el) {
+  return;
+}
 let cat = el.dataset.category;
 let beg = el.dataset.begin;
+let ajaxUrl = el.dataset.ajaxUrl || (typeof ajaxurl !== 'undefined' ? ajaxurl : "");
 let postNumNow = Number(beg);
 let postNumAdd = 3; // 一度に表示する数
 /* 最初の一回読み込み */
@@ -15,7 +19,7 @@ loading2();
 function loading1(){
 jQuery.ajax({
 type: "POST",
-url: ajaxurl,
+url: ajaxUrl,
 data: {
 action: 'load_blog_posts',
 post_num_now: postNumNow,
@@ -33,7 +37,7 @@ jQuery(".more_btn").hide();
 jQuery(".loading").show();
 jQuery.ajax({
 type: "POST",
-url: ajaxurl,
+url: ajaxUrl,
 data: {
 action: 'load_blog_posts',
 post_num_now: postNumNow,
