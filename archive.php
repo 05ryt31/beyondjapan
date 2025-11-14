@@ -5,7 +5,7 @@ $cat_info = get_category($cat);
 <div class="post">
 	<article class="archive reset">
 	<?php if ( get_post_type() === 'post' ) : ?>
-	<?php if(is_archive()) : ?>
+	<?php if( is_archive() && 'all' !== get_query_var( 'blog_scope' ) ) : ?>
 	<?php get_template_part( 'temp/post/_archive_blog_slide' ); ?>
 	<?php endif; ?>
 	<?php elseif (is_post_type_archive('stories')): ?>
