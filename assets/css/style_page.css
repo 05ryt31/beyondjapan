@@ -1230,65 +1230,73 @@
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 7%, rgba(186, 212, 245, 0) 21%, rgb(57, 133, 226) 47%, rgb(42, 124, 224) 50%, rgb(30, 87, 153) 100%);
   display: none;
 }
-.about-sec02-block .box-02-left {
+.about-sec02-block .box-02-left,
+.about-sec02-block .box-02-right {
   text-align: left;
   position: relative;
   z-index: 2;
   font-weight: 400;
 }
 @media screen and (max-width: 999.9px) {
-  .about-sec02-block .box-02-left {
+  .about-sec02-block .box-02-left,
+  .about-sec02-block .box-02-right {
     text-align: center;
   }
 }
-.about-sec02-block .box-02-left .txt {
+.about-sec02-block .box-02-left .txt,
+.about-sec02-block .box-02-right .txt {
   line-height: 1.6;
   margin-bottom: 1em;
 }
 @media screen and (min-width: 999.9px) {
-  .about-sec02-block .box-02-left .name-box {
+  .about-sec02-block .box-02-left .name-box,
+  .about-sec02-block .box-02-right .name-box {
     margin-top: 30px;
   }
 }
 @media screen and (max-width: 519.9px) {
-  .about-sec02-block .box-02-left .name-box {
+  .about-sec02-block .box-02-left .name-box,
+  .about-sec02-block .box-02-right .name-box {
     margin-top: 20px;
   }
 }
-.about-sec02-block .box-02-left .name-txt01 {
+.about-sec02-block .box-02-left .name-txt01,
+.about-sec02-block .box-02-right .name-txt01 {
   margin-bottom: 0.5em;
   font-size: 14px;
 }
 @media screen and (max-width: 519.9px) {
-  .about-sec02-block .box-02-left .name-txt01 {
+  .about-sec02-block .box-02-left .name-txt01,
+  .about-sec02-block .box-02-right .name-txt01 {
     font-size: 4vw;
   }
 }
-.about-sec02-block .box-02-left .name-txt02 {
+.about-sec02-block .box-02-left .name-txt02,
+.about-sec02-block .box-02-right .name-txt02 {
   font-size: 20px;
 }
 @media screen and (max-width: 519.9px) {
-  .about-sec02-block .box-02-left .name-txt02 {
+  .about-sec02-block .box-02-left .name-txt02,
+  .about-sec02-block .box-02-right .name-txt02 {
     font-size: 6vw;
   }
 }
-.about-sec02-block .box-02-left .name-txt02 span {
+.about-sec02-block .box-02-left .name-txt02 span,
+.about-sec02-block .box-02-right .name-txt02 span {
   display: block;
   font-size: 12px;
 }
-.about-sec02-block .box-02-left .name-btn {
+.about-sec02-block .box-02-left .name-btn,
+.about-sec02-block .box-02-right .name-btn {
   margin-top: 20px;
 }
-.about-sec02-block .box-02-left .name-btn a {
+.about-sec02-block .box-02-left .name-btn a,
+.about-sec02-block .box-02-right .name-btn a {
   display: block;
   border: 1px solid #2454C0;
   color: #2454C0;
   padding: 0.5em 0;
   text-align: center;
-}
-.about-sec02-block .box-02-right {
-  position: relative;
-  z-index: 1;
 }
 .about-sec02-block .box-02-right img {
   width: 100%;
