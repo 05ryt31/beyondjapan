@@ -107,10 +107,10 @@
 }
 .post .archive .picup {
   background-color: rgba(207, 217, 241, 0.2);
-  margin: 0 auto;
+  margin-bottom: 0;
+  margin-left: 150px;
+  margin-right: 150px;
   padding: 6vw 0 8vw 0;
-  max-width: 1280px;
-  width: 100%;
 }
 @media screen and (min-width: 999.9px) {
   .post .archive .picup {
