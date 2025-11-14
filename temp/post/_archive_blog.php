@@ -19,17 +19,25 @@
 		</div>
 	</div>	
 	<div class="js-switch-content active">
-		<div id="item-list" data-category="" data-begin="0">
-			<div class="item-result col3">
-				<!-- Ajaxで取得して表示 -->
-			</div>	
-			<div class="loading" style="display:none; text-align: center; margin-top: 1em;">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/image/common/loading.gif">
-			</div>
-			<p class="com-btn btn01">
-				<a class="more-btn">もっと見る</a>
-			</p>
-		</div>		
+		<div class="col3">
+			<?php
+			$paged = (int) get_query_var('paged');
+			$args = array(
+				'posts_per_page' => 6,
+				'paged' => $paged,
+				'orderby' => 'post_date',
+				'order' => 'DESC',
+				'post_type' => 'post',
+				'post_status' => 'publish',
+			);
+			$the_query = new WP_Query($args);
+			if ( $the_query->have_posts() ) :
+			while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+			<?php get_template_part( 'temp/post/_archive_blog_parts' ); ?>
+			<?php endwhile; endif; ?>
+			<?php wp_reset_postdata(); ?>	
+		</div>
+		<p class="com-btn btn01"><a href="/blog/all/">全ブログの一覧を見る</a></p>
 	</div>
 	<div class="js-switch-content">
 		<div class="col2">
