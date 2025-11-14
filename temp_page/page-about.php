@@ -57,8 +57,6 @@
 				<div class="col">
 					<div class="box-02">
 						<div class="box-02-col">
-							<div class="box-02-right">
-							</div>
 							<div class="box-02-left">
 								<div class="name-box">
 									<p class="name-txt01">株式会社 Beyond Japan 取締役</p>
@@ -77,10 +75,8 @@
 						</div>
 					</div>
 					<div>
-						<div class="box-03">
-							<div class="box-03-right">
-							</div>
-							<div class="box-03-left">
+						<div class="box-02-col">
+							<div class="box-02-left">
 								<div class="name-box">
 									<p class="name-txt01">株式会社 Beyond Japan 役員</p>
 									<p class="name-txt02">川畑　瑠斗<span>Ryuto Kawabata</span></p>
