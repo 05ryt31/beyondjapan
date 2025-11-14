@@ -127,7 +127,7 @@
 		</div>
 	</section>
 	<?php get_template_part( 'temp/_cv-contact' ); ?>
-	<?php get_template_part( 'temp/_cv_member' ); ?>
+	<?php // get_template_part( 'temp/_cv_member' ); ?>
 	<section class="com-point">
 		<div class="com-point-block">
 			<div class="container">
