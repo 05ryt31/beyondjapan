@@ -19,7 +19,7 @@
 		</div>
 	</div>	
 	<div class="js-switch-content active">
-		<div id="item-list" data-category="" data-begin="0" data-ajax-url="<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>">
+		<div id="item-list" data-category="" data-begin="0" data-ajax-url="<?php echo esc_url( get_template_directory_uri() . '/ajax-item.php' ); ?>">
 			<div class="item-result col3">
 				<!-- Ajaxで取得して表示 -->
 			</div>	
