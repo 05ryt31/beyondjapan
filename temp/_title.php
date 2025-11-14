@@ -58,6 +58,7 @@
 			</div>
 		</div>
 	</section>
+	<?php get_template_part( 'temp/post/_archive_blog_slide' ); ?>
 	<?php elseif (get_post_type() === 'stories'): ?>
 	<?php if (is_object_in_term($post->ID, 'stories_cate',array('studyabroad'))): ?>
 	<section class="stories-title studyabroad">
