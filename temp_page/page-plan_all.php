@@ -102,7 +102,7 @@
 									</div>
 									<div class="rightBox">
 										<p class="item-lead">道筋を立て、日々考え、積み重ねる</p>
-										<p class="item-price">奨学金<br> <span class="en">740</span>万円<small>（5万ドル）</small></p>
+										<p class="item-price">奨学金<br> <span class="en">750</span>万円<small>（5万ドル）</small></p>
 										<p class="item-name"><small>コロンビア大学</small>Kさん</p>
 									</div>
 								</div>
