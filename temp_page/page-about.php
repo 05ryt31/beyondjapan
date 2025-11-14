@@ -74,9 +74,9 @@
 							<p class="txt">この事業を通じて一人でも多くの方の明るい未来に貢献していきます。</p>
 						</div>
 					</div>
-					<div>
+					<div class="box-02">
 						<div class="box-02-col">
-							<div class="box-02-left">
+							<div class="box-02-right">
 								<div class="name-box">
 									<p class="name-txt01">株式会社 Beyond Japan 役員</p>
 									<p class="name-txt02">川畑　瑠斗<span>Ryuto Kawabata</span></p>
@@ -84,7 +84,7 @@
 								</div>
 							</div>
 						</div>
-						<div>
+						<div class="box-02-right">
 							<p class="lead">留学で広げる自分の可能性と価値観</p>
 							<p class="txt">日本を離れて、異国の地で生活し、世界の様々な国の人たちと出会ってきました。</p>
 							<p class="txt">日本と全く異なるカルチャーに衝撃を受け、世界の広さを体感したと同時に、自分自身の価値観や人生の目標も広がりました。</p>
