@@ -130,9 +130,15 @@ function post_has_archive( $args, $post_type ) {
 add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 ); 
 
 function add_blog_all_rewrite_rule() {
-	add_rewrite_rule( '^blog/all/?$', 'index.php?post_type=post', 'top' );
+	add_rewrite_rule( '^blog/all/?$', 'index.php?post_type=post&blog_scope=all', 'top' );
 }
 add_action( 'init', 'add_blog_all_rewrite_rule' );
+
+function add_blog_scope_query_var( $vars ) {
+	$vars[] = 'blog_scope';
+	return $vars;
+}
+add_filter( 'query_vars', 'add_blog_scope_query_var' );
 
 
 function custom_admin_style() {
