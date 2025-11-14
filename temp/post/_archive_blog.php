@@ -37,7 +37,7 @@
 			<?php endwhile; endif; ?>
 			<?php wp_reset_postdata(); ?>	
 		</div>
-		<p class="com-btn btn01"><a href="/blog/">ブログの一覧を見る</a></p>
+		<p class="com-btn btn01"><a href="/blog/all/">全ブログの一覧を見る</a></p>
 	</div>
 	<div class="js-switch-content">
 		<div class="col2">
