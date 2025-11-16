@@ -47,9 +47,9 @@
 		<div class="header-col">
 			<div class="header-col-left">
 <?php if ( is_home() || is_front_page() ) : ?>
-<h1 class="header-col-left-logo"><a href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/logo.png" alt=""/></a></h1>
+<h1 class="header-col-left-logo"><a href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/logo.png" alt="Beyond Japan - 海外留学・UC編入専門エージェント"/></a></h1>
 <?php else : ?>
-<p class="header-col-left-logo"><a href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/logo.png" alt=""/></a></p>
+<p class="header-col-left-logo"><a href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/logo.png" alt="Beyond Japan - 海外留学・UC編入専門エージェント"/></a></p>
 <?php endif; ?>
 				
 			</div>

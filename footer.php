@@ -10,7 +10,7 @@
 		<div class="container">
 			<div class="footer-col">
 				<div class="footer-col-left">
-					<p class="footer-logo"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/logo_f.png" alt=""/></p>
+					<p class="footer-logo"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/logo_f.png" alt="Beyond Japan - 海外留学・UC編入専門エージェント"/></p>
 					<p class="footer-name"><small>株式会社</small> Beyond Japan</p>
 				</div>
 				<div class="footer-col-right">
@@ -53,7 +53,7 @@
 				</div>
 			</div>
 			<div class="contact">
-				<p><a href="<?php echo home_url('/contact/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/icon_mail_w.png" alt=""/>無料カウンセリング</a></p>
+				<p><a href="<?php echo home_url('/contact/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/icon_mail_w.png" alt="メールアイコン - 無料カウンセリング申し込み"/>無料カウンセリング</a></p>
 			</div>
 			<div class="footer-copy">
 				<p>Copyright 2025  株式会社  Beyond Japan All rights reserved.</p>
