@@ -5,13 +5,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title><?php wp_title('&laquo;', true, 'right'); ?><?php bloginfo('name'); ?></title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/style_basic.css">
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/common.css">
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/form.css">
-<link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-narrow.min.css">
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/combined.css">
+<style>
+/* Critical CSS for above the fold */
+.header { position: fixed; top: 0; width: 100%; z-index: 1000; background: #fff; }
+.home-kv { padding-top: 80px; }
+</style>
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/assets/image/favicon.ico" >
 
 <?php if ( is_home() || is_front_page() ) : ?>

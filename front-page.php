@@ -23,30 +23,17 @@
 		<div class="scroll-infinity">
 			<div class="scroll-infinity__wrap">
 				<ul class="scroll-infinity__list scroll-infinity__list--left">
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr01.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr02.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr03.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr04.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr05.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr06.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr07.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr08.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr09.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr10.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr11.png" alt=""/></li>
-				</ul>
-				<ul class="scroll-infinity__list scroll-infinity__list--left">
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr01.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr02.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr03.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr04.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr05.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr06.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr07.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr08.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr09.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr10.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr11.png" alt=""/></li>
+					<li class="scroll-infinity__item"><img loading="lazy" src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr01.png" alt=""/></li>
+					<li class="scroll-infinity__item"><img loading="lazy" src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr02.png" alt=""/></li>
+					<li class="scroll-infinity__item"><img loading="lazy" src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr03.png" alt=""/></li>
+					<li class="scroll-infinity__item"><img loading="lazy" src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr04.png" alt=""/></li>
+					<li class="scroll-infinity__item"><img loading="lazy" src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr05.png" alt=""/></li>
+					<li class="scroll-infinity__item"><img loading="lazy" src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr06.png" alt=""/></li>
+					<li class="scroll-infinity__item"><img loading="lazy" src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr07.png" alt=""/></li>
+					<li class="scroll-infinity__item"><img loading="lazy" src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr08.png" alt=""/></li>
+					<li class="scroll-infinity__item"><img loading="lazy" src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr09.png" alt=""/></li>
+					<li class="scroll-infinity__item"><img loading="lazy" src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr10.png" alt=""/></li>
+					<li class="scroll-infinity__item"><img loading="lazy" src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr11.png" alt=""/></li>
 				</ul>
 			</div>
 		</div>
