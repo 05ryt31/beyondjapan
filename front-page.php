@@ -3,17 +3,17 @@
 
 	<section class="home-kv">
 				<ul class="home-kv-img view-sp">
-			<li><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/kv_pc.png" alt=""/></li>
+			<li><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/kv_pc.png" alt="留学のメインビジュアル"/></li>
 		</ul>
 		<div class="home-kv-inner">
 			<div class="container">
-				<h2 class="lead"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/kv_txt.png" alt=""/>
+				<h2 class="lead"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/kv_txt.png" alt="アメリカ大学・UC編入サポート - 留学は人生を変える"/>
 					<!--<span>留学</span>は <br>
 					<span>人生</span>を変える--></h2>
 				<ul class="label">
-					<li><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/kv_ico01.png" alt=""/></li>
-					<li><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/kv_ico02.png" alt=""/></li>
-					<li><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/kv_ico03.png" alt=""/></li>
+					<li><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/kv_ico01.png" alt="カリフォルニア大学合格率100%実績"/></li>
+					<li><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/kv_ico02.png" alt="コロンビア大学合格実績"/></li>
+					<li><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/kv_ico03.png" alt="SusHi Tech登壇実績"/></li>
 				</ul>
 			</div>
 		</div>
@@ -23,30 +23,30 @@
 		<div class="scroll-infinity">
 			<div class="scroll-infinity__wrap">
 				<ul class="scroll-infinity__list scroll-infinity__list--left">
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr01.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr02.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr03.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr04.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr05.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr06.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr07.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr08.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr09.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr10.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr11.png" alt=""/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr01.png" alt="UCB"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr02.png" alt="UCLA"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr03.png" alt="Columbia"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr04.png" alt="U of T"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr05.png" alt="SJSU"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr06.png" alt="MU"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr07.png" alt="UBC"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr08.png" alt="UCD"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr09.png" alt="UCSD"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr10.png" alt="USC"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr11.png" alt="NYU"/></li>
 				</ul>
 				<ul class="scroll-infinity__list scroll-infinity__list--left">
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr01.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr02.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr03.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr04.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr05.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr06.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr07.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr08.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr09.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr10.png" alt=""/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr11.png" alt=""/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr01.png" alt="UCB"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr02.png" alt="UCLA"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr03.png" alt="Columbia"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr04.png" alt="U of T"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr05.png" alt="SJSU"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr06.png" alt="MU"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr07.png" alt="UBC"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr08.png" alt="UCD"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr09.png" alt="UCSD"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr10.png" alt="USC"/></li>
+					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr11.png" alt="NYU"/></li>
 				</ul>
 			</div>
 		</div>
@@ -59,7 +59,7 @@
 						<h2 class="lead"><span class="red">情報</span>さえあれば<br class="view-sp"><span>誰</span>もが<span><br class="view-pc">世界</span>の<br class="view-sp"><span class="red">名門大学</span>に行ける</h2>
 					</div>
 					<div class="col-right">
-						<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/message_pic01.png" alt=""/></p>
+						<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/message_pic01.png" alt="憧れの大学へ - Beyond Japan アメリカ大学留学"/></p>
 					</div>
 				</div>
 			</div>
@@ -75,7 +75,7 @@
 						<p class="txt"><b>2年間</b>コミュニティカレッジに通い、取得した単位を移行して<b>4年制大学の3年次</b>に編入ができるシステムを多くの留学生が利用しています。</p>
 					</div>
 					<div class="col-right">
-						<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/transfer_img01.png" alt=""/></p>
+						<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/transfer_img01.png" alt="UC編入制度図 - カリフォルニア大学編入システム"/></p>
 					</div>
 				</div>
 			</div>
@@ -99,7 +99,7 @@
 						<div class="uc-box">
 							<p class="txt-01"><span>合格率</span>が<br>
 								圧倒的に高い</p>
-							<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/uc_merit01.png" alt=""/></p>
+							<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/uc_merit01.png" alt="カリフォルニア大学編入 高合格率を示すグラフ - UC編入サポート"/></p>
 							<p class="txt-02">カリフォルニア大学TOP校に<br>
 								編入できる確率は</p>
 						</div>
@@ -115,7 +115,7 @@
 						<div class="uc-box">
 							<p class="txt-01"><span>学費</span>の<span>節約</span>が<br>
 								できます</p>
-							<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/uc_merit02.png" alt=""/></p>
+							<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/uc_merit02.png" alt="アメリカ大学留学費用削減シミュレーション - UC編入で学費節約"/></p>
 							<p class="txt-02">コミュニティ・カレッジを<br>
 								経由するだけで</p>
 						</div>
@@ -131,7 +131,7 @@
 						<div class="uc-box">
 							<p class="txt-01"><span>英語力</span>に<br>
 								自信が無くてもOK</p>
-							<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/uc_merit03.png" alt=""/></p>
+							<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/uc_merit03.png" alt="英語力要件図 - UC編入に必要な英語レベル"/></p>
 							<p class="txt-02">コミュニティ・カレッジで<br>
 								英語力をつけるので</p>
 						</div>
@@ -163,32 +163,32 @@
 				<div class="container">
 					<div class="col">
 						<div class="col-item">
-							<p class="ico-ranking"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ranking_ucb.png" alt=""/></p>
+							<p class="ico-ranking"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ranking_ucb.png" alt="UC Berkeley世界大学ランキング - カリフォルニア大学バークレー校"/></p>
 							<h3 class="name-en">UCB</h3>
 							<p class="name-ja">バークレー校</p>
 							<p class="name-en-full en">University of California, Berkeley</p>
-							<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ranking_ucb_pic.png" alt=""/></p>
+							<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ranking_ucb_pic.png" alt="UCバークレー キャンパス風景 - アメリカ大学留学先"/></p>
 						</div>
 						<div class="col-item">
-							<p class="ico-ranking"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ranking_ucla.png" alt=""/></p>
+							<p class="ico-ranking"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ranking_ucla.png" alt="UCLA世界大学ランキング - カリフォルニア大学ロサンゼルス校"/></p>
 							<h3 class="name-en">UCLA</h3>
 							<p class="name-ja">ロサンゼルス校</p>
 							<p class="name-en-full en">University of California, Los Angeles</p>
-							<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ranking_ucla_pic.png" alt=""/></p>
+							<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ranking_ucla_pic.png" alt="UCLA キャンパス風景 - カリフォルニア大学ロサンゼルス校"/></p>
 						</div>
 						<div class="col-item">
-							<p class="ico-ranking"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ranking_ucsd.png" alt=""/></p>
+							<p class="ico-ranking"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ranking_ucsd.png" alt="UCSD世界大学ランキング - カリフォルニア大学サンディエゴ校"/></p>
 							<h3 class="name-en">UCSD</h3>
 							<p class="name-ja">サンディエゴ校</p>
 							<p class="name-en-full en">University of California San Diego</p>
-							<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ranking_ucsd_pic.png" alt=""/></p>
+							<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ranking_ucsd_pic.png" alt="UCSD キャンパス風景 - カリフォルニア大学サンディエゴ校"/></p>
 						</div>
 					</div>
 					<p class="com-lanking-link"><a target="_blank" href="https://www.timeshighereducation.com/world-university-rankings/latest/world-ranking">※The Times Higher Education World University Ranking 2025</a></p>
 					<div class="guarantee-block">
 						<p class="lead">合格確約保障対象の<small>TOP</small><span class="en">3</span>校は</p>
 						<h2 class="title">世界ランキング上位の大学です</h2>
-						<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/ranking_img_pc.png" alt=""/></p>
+						<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/ranking_img_pc.png" alt="世界大学ランキング比較表 - UC編入対象校の世界的評価"/></p>
 					</div>
 				</div>
 			</div>
@@ -204,7 +204,7 @@
 				<div class="plan-col">
 					<div class="plan-col-item">
 						<div class="plan-osusume">\ オススメ /<span><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/ico_oukan.png" alt=""/></span></div>
-						<p class="plan-pic"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/plan_full.png" alt=""/></p>
+						<p class="plan-pic"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/plan_full.png" alt="フルサポートプラン - Beyond Japan アメリカ大学留学プログラム"/></p>
 						<div class="inner">
 							<p class="plan-lead">全米・カナダの4年制大学への<br>
 								留学を実現します</p>
@@ -213,7 +213,7 @@
 						</div>
 						<a href="<?php echo home_url('/plan_full/'); ?>"><span>詳しく見る</span></a> </div>
 					<div class="plan-col-item">
-						<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/plan_uc.png" alt=""/></p>
+						<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/plan_uc.png" alt="カリフォルニア大学編入プラン - UC編入専門サポートプログラム"/></p>
 						<div class="inner">
 							<p class="plan-lead">夢の一流大学へ<br>
 								賢く最短ルートで!</p>
@@ -222,7 +222,7 @@
 						</div>
 						<a href="<?php echo home_url('/plan_uc/'); ?>"><span>詳しく見る</span></a> </div>
 					<div class="plan-col-item">
-						<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/plan_all.png" alt=""/></p>
+						<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/plan_all.png" alt="全米大学編入プラン - アメリカ全土の大学への編入サポート"/></p>
 						<div class="inner">
 							<p class="plan-lead">全米大学の理想のキャンパスへ<br>
 								アイビーリーグも夢じゃない</p>
@@ -232,7 +232,7 @@
 						<a href="<?php echo home_url('/plan_all/'); ?>"><span>詳しく見る</span></a> </div>
 
 					<div class="plan-col-item">
-						<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/plan_canada.png" alt=""/></p>
+						<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/plan_canada.png" alt="カナダ大学編入プラン - カナダ留学専門サポートプログラム"/></p>
 						<div class="inner">
 							<p class="plan-lead">費用もビザも安心<br>
 								堅実で確かな留学</p>
@@ -251,45 +251,45 @@
 					<span class="en">2</span>年間を密着サポート</p>
 				<h2 class="title">充実<small>の</small>サポート</h2>		
 				<div class="col">
-					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico01.png" alt=""/>
+					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico01.png" alt="出願・VISA申請サポート - Beyond Japan 海外留学エージェント"/>
 						<figcaption>出願・VISA<br>
 							サポート</figcaption>
 					</figure>
-					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico09.png" alt=""/>
+					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico09.png" alt="Essay添削サポート - アメリカ大学出願エッセイ指導"/>
 						<figcaption>Essay添削</figcaption>
 					</figure>
-					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico05.png" alt=""/>
+					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico05.png" alt="課外活動紹介・あっせん - アメリカ大学留学準備"/>
 						<figcaption>課外活動の<br>
 							紹介・あっせん</figcaption>
 					</figure>
-					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico10.png" alt=""/>
+					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico10.png" alt="履修登録サポート - UC編入準備支援"/>
 						<figcaption>履修登録サポート</figcaption>
 					</figure>
-					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico11.png" alt=""/>
+					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico11.png" alt="編入申請サポート - カリフォルニア大学編入手続き"/>
 						<figcaption>編入申請サポート</figcaption>
 					</figure>
-					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico12.png" alt=""/>
+					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico12.png" alt="米国生活サポート - アメリカ大学留学生活支援"/>
 						<figcaption>米国生活サポート</figcaption>
 					</figure>
-					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico13.png" alt=""/>
+					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico13.png" alt="ホームステイ申請サポート - 海外留学滞在先支援"/>
 						<figcaption>ホームステイ申請<br>サポート</figcaption>
 					</figure>
-					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico14.png" alt=""/>
+					<figure class="col-item"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico14.png" alt="TAG申請サポート - UC編入保証プログラム"/>
 						<figcaption>TAG申請サポート</figcaption>
 					</figure>
 				</div>
 				<p class="ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/plan/canada/plan_ico01.png" alt=""/></p>
 				<div class="col">
-					<figure class="col-item on full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico04.png" alt=""/>
+					<figure class="col-item on full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico04.png" alt="奨学金申請サポート - アメリカ大学留学費用支援"/>
 						<figcaption>奨学金<br>サポート</figcaption>
 					</figure>
-					<figure class="col-item on full"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico06.png" alt=""/>
+					<figure class="col-item on full"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico06.png" alt="オンライン英会話レッスン - 海外留学準備英語学習"/>
 						<figcaption>オンライン英会話</figcaption>
 					</figure>
-					<figure class="col-item on full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico07.png" alt=""/>
+					<figure class="col-item on full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico07.png" alt="Beyond Japanインターンシップ - 留学エージェント実務経験"/>
 						<figcaption>BJでのインターン</figcaption>
 					</figure>
-					<figure class="col-item on full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico03.png" alt=""/>
+					<figure class="col-item on full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico03.png" alt="進捗管理サポート - UC編入準備スケジュール管理"/>
 						<figcaption>進捗管理</figcaption>
 					</figure>
 				</div>
@@ -306,22 +306,22 @@
 				<h2 class="sec-tit">活動実績</h2>
 				<div class="col">
 					<div class="col-item">
-						<p class="item-pic"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/activity_pic01.png" alt=""/></p>
-						<h3 class="item-name"><span><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/activity_logo01.png" alt=""/></span>Japan America Business Initiatives</h3>
+						<p class="item-pic"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/activity_pic01.png" alt="Japan Innovation Campus登壇写真 - Beyond Japan活動実績"/></p>
+						<h3 class="item-name"><span><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/activity_logo01.png" alt="Japan America Business Initiatives ロゴ"/></span>Japan America Business Initiatives</h3>
 						<p class="item-tit">サンフランシスコ「Japan Innovation Campus」にて登壇</p>
 						<p>日本の高校生から米国在住の日本人まで多岐にわたる参加者がオンライン参加を含め120名を超え、盛況のうちに終了いたしました。</p>
 						<p>Beyond Japanの事業内容や創業に至るまでの経緯についてお話しいたしました。</p>
 					</div>
 					<div class="col-item">
-						<p class="item-pic"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/activity_pic02.png" alt=""/></p>
-						<h3 class="item-name"><span><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/activity_logo02.png" alt=""/></span>SusHi Tech TOKYO</h3>
+						<p class="item-pic"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/activity_pic02.png" alt="SusHi Tech TOKYO登壇写真 - Beyond Japan代表講演"/></p>
+						<h3 class="item-name"><span><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/activity_logo02.png" alt="SusHi Tech TOKYO ロゴ"/></span>SusHi Tech TOKYO</h3>
 						<p class="item-tit">ビッグサイト「SusHi Tech TOKYO 2025」にて登壇</p>
 						<p>東京都主催の国際イベント「SusHi Tech Tokyo 2025」に、弊社代表の小池が登壇しました。</p>
 						<p>3万人近くが来場する中、弊社は留学スタートアップを代表し、事業の展望や現状について講演し、盛況のうちに幕を閉じました。</p>
 					</div>
 					<div class="col-item">
-						<p class="item-pic"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/activity_pic03.png" alt=""/></p>
-						<h3 class="item-name"><span><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/activity_logo03.png" alt=""/></span>Beyond Japan</h3>
+						<p class="item-pic"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/activity_pic03.png" alt="UCバークレー キャンパスツアー写真 - 高校生向け大学見学"/></p>
+						<h3 class="item-name"><span><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/activity_logo03.png" alt="Beyond Japan ロゴ - 海外留学・UC編入専門エージェント"/></span>Beyond Japan</h3>
 						<p class="item-tit">UCバークレー 日本の高校生たち向けのキャンパスツアー</p>
 						<p>日本からシリコンバレー見学にきた高校生たちに向けて、UCバークレーのキャンパスツアーを行いました。</p>
 						<p>歴史あるキャンパスを歩きながら、アメリカの大学生活や充実したアカデミック環境に直接触れる機会を持ちました</p>
