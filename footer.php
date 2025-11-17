@@ -68,8 +68,8 @@
 
 <div class="followerBanner reset">
 	<ul>
-		<li class="line"><a target="_blank" href="https://page.line.me/601lqdhg">LINE無料相談<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_btn01.png" alt=""/></a></li>
-		<li><a href="<?php echo home_url('/contact/'); ?>">無料カウンセリング<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_btn02.png" alt=""/></a></li>
+		<li class="line"><a target="_blank" href="https://page.line.me/601lqdhg">LINE無料相談<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_btn01.png" alt="LINE無料相談 - Beyond Japan 海外大学留学"/></a></li>
+		<li><a href="<?php echo home_url('/contact/'); ?>">無料カウンセリング<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_btn02.png" alt="無料カウンセリング - Beyond Japan 海外大学留学"/></a></li>
 	</ul>
 </div>
 
@@ -98,8 +98,8 @@
 $('.slid_banner').slick({
   infinite: true,
   arrows:  true,
-  prevArrow: '<p class="prev-arrow"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt=""/></p>',
-  nextArrow: '<p class="next-arrow"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt=""/></p>',
+  prevArrow: '<p class="prev-arrow"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt="バナー - Beyond Japan 海外大学留学"/></p>',
+  nextArrow: '<p class="next-arrow"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt="バナー - Beyond Japan 海外大学留学"/></p>',
   dots: true,
   slidesToShow: 2,
   speed: 1000,
@@ -124,8 +124,8 @@ $('.slid_banner').slick({
 $('.slid_blog').slick({
   infinite: true,
   arrows:  true,
-  prevArrow: '<p class="prev-arrow"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt=""/></p>',
-  nextArrow: '<p class="next-arrow"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt=""/></p>',
+  prevArrow: '<p class="prev-arrow"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt="ブログ - Beyond Japan 海外大学留学"/></p>',
+  nextArrow: '<p class="next-arrow"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt="ブログ - Beyond Japan 海外大学留学"/></p>',
   dots:  true,
   slidesToShow: 2,
   speed: 1000,

@@ -22,7 +22,7 @@
 									<dd>何でも無料相談</dd>
 								</dl>
 								<p>留学に関するあらゆるご質問、お客様一人ひとりの状況やご希望に合わせたカウンセリングを、留学・編入のエキスパートが承ります。初回から3回まで無料でご相談いただけますので、留学の不明点や不安な点も、お気軽にご相談ください。</p>
-								<p class="com-btn btn01"><a href="/contact/">無料カウンセリング受付<img src="/assets/image/common/ico_arrow01.png" alt=""/></a></p>
+								<p class="com-btn btn01"><a href="/contact/">無料カウンセリング受付<img src="/assets/image/common/ico_arrow01.png" alt="無料カウンセリング受付 - Beyond Japan アメリカ大学留学"/></a></p>
 							</div>
 
 						</div>

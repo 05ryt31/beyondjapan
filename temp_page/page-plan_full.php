@@ -45,7 +45,7 @@
 	<section class="cv_support full">
 		<div class="cv_support-block">
 			<div class="container">
-				<p class="ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/plan/canada/plan_ico01.png" alt=""/></p>
+				<p class="ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/plan/canada/plan_ico01.png" alt="フルサポートプラン"/></p>
 				<p class="lead">留学前から大学編入まで<br class="view-sp">
 					<span class="en">2</span>年間を密着サポート</p>
 				<h2 class="title">一気通貫<small>の</small>サポート</h2>			
@@ -106,23 +106,23 @@
 	</section>			
 				
 				<h3>これらのプランでカバーされるサポートにプラスで様々なサポートがついてきます</h3>
-				<p class="ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/plan/canada/plan_ico01.png" alt=""/></p>
+				<p class="ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/plan/canada/plan_ico01.png" alt="フルサポートプラン"/></p>
 				<div class="col">
-					<figure class="col-item on full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico04.png" alt=""/>
+					<figure class="col-item on full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico04.png" alt="奨学金サポート - フルサポートプラン"/>
 						<figcaption>奨学金<br>サポート</figcaption>
 					</figure>
-					<figure class="col-item on full"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico06.png" alt=""/>
+					<figure class="col-item on full"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico06.png" alt="オンライン英会話 - フルサポートプラン"/>
 						<figcaption>オンライン英会話</figcaption>
 					</figure>
-					<figure class="col-item on full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico07.png" alt=""/>
+					<figure class="col-item on full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico07.png" alt="BJでのインターン - フルサポートプラン"/>
 						<figcaption>BJでのインターン<br><small>（*条件あり）</small></figcaption>
 					</figure>
-					<figure class="col-item on full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico03.png" alt=""/>
+					<figure class="col-item on full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico03.png" alt="進捗管理 - フルサポートプラン"/>
 						<figcaption>進捗管理</figcaption>
 					</figure>
 				</div>
 				
-				<p class="com-btn btn01"><a href="/transfer_flow/">編入までの流れ<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt=""/></a></p>
+				<p class="com-btn btn01"><a href="/transfer_flow/">編入までの流れ<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt="編入までの流れ - Beyond Japan アメリカ大学留学"/></a></p>
 			</div>
 		</div>
 	</section>
@@ -201,7 +201,7 @@
 									<p>慣れない英語で新しい内容を学ぶことは簡単ではありません。</p>
 									<p>現に編入試験の50％を担う最重要なのが成績であるのに、数多くの生徒が特に理系科目で成績を落としています。</p>
 									<p>Beyond Japanでは、生徒様にチューターが専属でつき、毎週時間を設けて、分からない問題や授業の内容を解説いたします。</p>
-									<p class="com-btn btn01"><a href="/contact/">詳しい内容は”無料カウンセリング”<img src="http://beyondjp.net/wp-content/themes/beyondjapan/assets/image/common/ico_arrow01.png" alt=""/></a></p>
+									<p class="com-btn btn01"><a href="/contact/">詳しい内容は”無料カウンセリング”<img src="http://beyondjp.net/wp-content/themes/beyondjapan/assets/image/common/ico_arrow01.png" alt="無料カウンセリング - Beyond Japan アメリカ大学留学"/></a></p>
 								</div>
 								<div class="item-box-col-right">
 									<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/plan/full/point03.jpeg" alt=""/></p>
