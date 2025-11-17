@@ -183,50 +183,50 @@
 				<p class="lead">留学前から大学編入まで<br class="view-sp"><span class="en">2</span>年間を密着サポート</p>
 				<h2 class="title">一気通貫<small>の</small>サポート</h2>
 				<div class="col">
-					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico01.png" alt=""/>
+					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico01.png" alt="出願・VISAサポート - アメリカ大学留学準備"/>
 						<figcaption>出願・VISA<br>
 							サポート</figcaption>
 					</figure>
-					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico09.png" alt=""/>
+					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico09.png" alt="Essay添削 - アメリカ大学留学準備"/>
 						<figcaption>Essay添削</figcaption>
 					</figure>
-					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico05.png" alt=""/>
+					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico05.png" alt="課外活動の紹介・アレンジ - アメリカ大学留学準備"/>
 						<figcaption>課外活動の<br>
 							紹介・あっせん</figcaption>
 					</figure>
-					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico10.png" alt=""/>
+					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico10.png" alt="履修登録サポート - アメリカ大学留学準備"/>
 						<figcaption>履修登録サポート</figcaption>
 					</figure>
-					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico11.png" alt=""/>
+					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico11.png" alt="編入申請サポート - アメリカ大学留学準備"/>
 						<figcaption>編入申請サポート</figcaption>
 					</figure>
-					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico12.png" alt=""/>
+					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico12.png" alt="米国生活サポート - アメリカ大学留学準備"/>
 						<figcaption>米国生活サポート</figcaption>
 					</figure>
-					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico13.png" alt=""/>
+					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico13.png" alt="ホームステイ申請サポート - アメリカ大学留学準備"/>
 						<figcaption>ホームステイ申請<br>サポート</figcaption>
 					</figure>
-					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico14.png" alt=""/>
+					<figure class="col-item on"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico14.png" alt="TAG申請サポート - アメリカ大学留学準備"/>
 						<figcaption>TAG申請サポート</figcaption>
 					</figure>
 				</div>
-				<p class="ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/plan/canada/plan_ico01.png" alt=""/></p>
+				<p class="ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/plan/canada/plan_ico01.png" alt="カナダ大学編入プラン"/></p>
 				<div class="col">
-					<figure class="col-item off full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico04.png" alt=""/>
+					<figure class="col-item off full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico04.png" alt="奨学金サポート - アメリカ大学留学準備"/>
 						<figcaption>奨学金<br>サポート</figcaption>
 					</figure>
-					<figure class="col-item off full"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico06.png" alt=""/>
+					<figure class="col-item off full"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico06.png" alt="オンライン英会話 - アメリカ大学留学準備"/>
 						<figcaption>オンライン英会話</figcaption>
 					</figure>
-					<figure class="col-item off full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico07.png" alt=""/>
+					<figure class="col-item off full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico07.png" alt="BJでのインターン - アメリカ大学留学準備"/>
 						<figcaption>BJでのインターン</figcaption>
 					</figure>
-					<figure class="col-item off full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico03.png" alt=""/>
+					<figure class="col-item off full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico03.png" alt="進捗管理 - アメリカ大学留学準備"/>
 						<figcaption>進捗管理</figcaption>
 					</figure>
 				</div>
 				<p class="attation">※フルサポートプランのみ全適用となります</p>
-				<p class="com-btn btn01"><a href="<?php echo home_url('/transfer_flow/'); ?>">編入までの流れ<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt=""/></a></p>
+				<p class="com-btn btn01"><a href="<?php echo home_url('/transfer_flow/'); ?>">編入までの流れ<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt="編入までの流れ - Beyond Japan アメリカ大学留学"/></a></p>
 			</div>
 		</div>
 	</section>

@@ -23,7 +23,7 @@
 					<li><a href="<?php echo home_url('/about/#sec03'); ?>">会社情報</a></li>
 				</ul></li>	
 			</ul>
-			<p class="contact"><a href="<?php echo home_url('/contact/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/icon_mail_w.png" alt=""/>お問い合わせ</a></p>
+			<p class="contact"><a href="<?php echo home_url('/contact/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/icon_mail_w.png" alt="メールアイコン - 無料カウンセリング申し込み"/>お問い合わせ</a></p>
 		</nav>
 	</div>
 </div>

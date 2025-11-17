@@ -80,7 +80,7 @@
 				</div>
 			</div>
 			<div>
-				<h3 class="lead-uc">カリフォルニア大学の<span><b class="en">3</b>人に<b class="en">1</b>人<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/transfer_ico.png" alt=""/></span>が<br class="view-sp">
+				<h3 class="lead-uc">カリフォルニア大学の<span><b class="en">3</b>人に<b class="en">1</b>人<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/transfer_ico.png" alt="CA大学の3人に1人が編入しています - Beyond Japan アメリカ大学留学"/></span>が<br class="view-sp">
 					コミュニティ・カレッジから編入しています</h3>
 			</div>
 		</div>
@@ -203,13 +203,13 @@
 				<p class="lead">4つのプランで憧れの世界上位の大学への留学をサポートいたします</p>
 				<div class="plan-col">
 					<div class="plan-col-item">
-						<div class="plan-osusume">\ オススメ /<span><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/ico_oukan.png" alt=""/></span></div>
+						<div class="plan-osusume">\ オススメ /<span><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/ico_oukan.png" alt="ランキング"/></span></div>
 						<p class="plan-pic"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/plan_full.png" alt="フルサポートプラン - Beyond Japan アメリカ大学留学プログラム"/></p>
 						<div class="inner">
 							<p class="plan-lead">全米・カナダの4年制大学への<br>
 								留学を実現します</p>
 							<h3 class="plan-name">フルサポートプラン</h3>
-							<p class="plan-ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow03.png" alt=""/></p>
+							<p class="plan-ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow03.png" alt="フルサポートプランの詳細を見る"/></p>
 						</div>
 						<a href="<?php echo home_url('/plan_full/'); ?>"><span>詳しく見る</span></a> </div>
 					<div class="plan-col-item">
@@ -218,7 +218,7 @@
 							<p class="plan-lead">夢の一流大学へ<br>
 								賢く最短ルートで!</p>
 							<h3 class="plan-name">カリフォルニア大学編入プラン</h3>
-							<p class="plan-ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow03.png" alt=""/></p>
+							<p class="plan-ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow03.png" alt="カリフォルニア大学編入プランの詳細を見る"/></p>
 						</div>
 						<a href="<?php echo home_url('/plan_uc/'); ?>"><span>詳しく見る</span></a> </div>
 					<div class="plan-col-item">
@@ -227,7 +227,7 @@
 							<p class="plan-lead">全米大学の理想のキャンパスへ<br>
 								アイビーリーグも夢じゃない</p>
 							<h3 class="plan-name">全米大学編入プラン</h3>
-							<p class="plan-ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow03.png" alt=""/></p>
+							<p class="plan-ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow03.png" alt="全米大学編入プランの詳細を見る"/></p>
 						</div>
 						<a href="<?php echo home_url('/plan_all/'); ?>"><span>詳しく見る</span></a> </div>
 
@@ -237,7 +237,7 @@
 							<p class="plan-lead">費用もビザも安心<br>
 								堅実で確かな留学</p>
 							<h3 class="plan-name">カナダ大学編入プラン</h3>
-							<p class="plan-ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow03.png" alt=""/></p>
+							<p class="plan-ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow03.png" alt="カナダ大学編入プランの詳細を見る"/></p>
 						</div>
 						<a href="<?php echo home_url('/plan_canada/'); ?>"><span>詳しく見る</span></a> </div>
 				</div>
@@ -278,7 +278,7 @@
 						<figcaption>TAG申請サポート</figcaption>
 					</figure>
 				</div>
-				<p class="ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/plan/canada/plan_ico01.png" alt=""/></p>
+				<p class="ico"><img src="<?php bloginfo('template_directory'); ?>/assets/image/plan/canada/plan_ico01.png" alt="カナダ大学編入プランの詳細を見る"/></p>
 				<div class="col">
 					<figure class="col-item on full"> <img src="<?php bloginfo('template_directory'); ?>/assets/image/common/support_ico04.png" alt="奨学金申請サポート - アメリカ大学留学費用支援"/>
 						<figcaption>奨学金<br>サポート</figcaption>
@@ -294,7 +294,7 @@
 					</figure>
 				</div>
 				<p class="attation">※フルサポートプランのみ全適用となります</p>
-				<p class="com-btn btn01"><a href="<?php echo home_url('/transfer/'); ?>">編入までの流れ<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt=""/></a></p>
+				<p class="com-btn btn01"><a href="<?php echo home_url('/transfer/'); ?>">編入までの流れ<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt="編入までの流れはコチラ - Beyond Japan アメリカ大学留学"/></a></p>
 			</div>
 		</div>
 	</section>	
@@ -338,7 +338,7 @@
 				<h2 class="sec-tit">留学情報ブログ</h2>
 <?php get_template_part( 'temp/_top_blog' ); ?>
 				<div>
-					<p class="com-btn btn01"><a href="<?php echo home_url('/blog/'); ?>">一覧を見る<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt=""/></a></p>
+					<p class="com-btn btn01"><a href="<?php echo home_url('/blog/'); ?>">一覧を見る<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt="ブログはコチラ - Beyond Japan アメリカ大学留学"/></a></p>
 				</div>
 			</div>
 		</div>
