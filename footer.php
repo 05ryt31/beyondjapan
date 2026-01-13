@@ -56,7 +56,7 @@
 				<p><a href="<?php echo home_url('/contact/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/icon_mail_w.png" alt="メールアイコン - 無料カウンセリング申し込み"/>無料カウンセリング</a></p>
 			</div>
 			<div class="footer-copy">
-				<p>Copyright 2025  株式会社  Beyond Japan All rights reserved.</p>
+				<p>Copyright 2026 株式会社 Beyond Japan All rights reserved.</p>
 			</div>
 		</div>
 	</footer>
