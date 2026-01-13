@@ -727,7 +727,7 @@ function beyondjapan_process_output($html) {
     // ファーストビュー画像を除く画像にlazy loadingを追加
     // kv_, logo, favicon は除外（ファーストビューで必要）
     $html = preg_replace_callback(
-        '/<img(?![^>]*loading=)([^>]*src=["\'][^"\']*(?!kv_|logo|favicon)[^"\']*["\'][^>]*)>/i',
+        '/<img(?![^>]*\bloading=)([^>]*)>/i',
         function($matches) {
             // srcにkv_, logo, faviconが含まれていなければlazy loadingを追加
             if (!preg_match('/(kv_|logo|favicon)/i', $matches[1])) {
