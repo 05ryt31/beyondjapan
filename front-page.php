@@ -1,5 +1,7 @@
 <?php get_header();?>
 <div class="reset">
+<!-- SEO: メインH1タグ（視覚的には非表示、検索エンジン用） -->
+<h1 class="visually-hidden">アメリカ大学編入・カリフォルニア大学留学サポート｜コミカレからUCLA・UCバークレーへの編入</h1>
 
 	<section class="home-kv">
 				<ul class="home-kv-img view-sp">
@@ -59,7 +61,7 @@
 						<h2 class="lead"><span class="red">情報</span>さえあれば<br class="view-sp"><span>誰</span>もが<span><br class="view-pc">世界</span>の<br class="view-sp"><span class="red">名門大学</span>に行ける</h2>
 					</div>
 					<div class="col-right">
-						<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/message_pic01.png" alt="憧れの大学へ - Beyond Japan アメリカ大学留学"/></p>
+						<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/message_pic01.png" alt="憧れの大学へ - Beyond Japan アメリカ大学留学" loading="lazy"/></p>
 					</div>
 				</div>
 			</div>

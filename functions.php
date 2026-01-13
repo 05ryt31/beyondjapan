@@ -395,4 +395,410 @@ function custom_post_labels( $labels ) {
 	return $labels;
 }
 add_filter( 'post_type_labels_post', 'custom_post_labels' );
+
+/**
+ * =====================================================
+ * SEO強化: 構造化データ（JSON-LD）
+ * All in One SEOと競合しない形で追加
+ * =====================================================
+ */
+
+/**
+ * 組織情報の構造化データ（トップページ）
+ */
+function beyondjapan_organization_schema() {
+    if (!is_front_page()) return;
+
+    $schema = array(
+        '@context' => 'https://schema.org',
+        '@type' => 'EducationalOrganization',
+        'name' => 'Beyond Japan',
+        'alternateName' => 'ビヨンドジャパン',
+        'description' => 'アメリカ・カナダの大学への編入留学を専門サポート。コミュニティカレッジからカリフォルニア大学（UCLA、UCバークレー）への編入実績多数。',
+        'url' => home_url('/'),
+        'logo' => array(
+            '@type' => 'ImageObject',
+            'url' => get_template_directory_uri() . '/assets/image/common/logo.png'
+        ),
+        'image' => get_template_directory_uri() . '/assets/image/home/kv_pc.png',
+        'areaServed' => array(
+            '@type' => 'Country',
+            'name' => 'Japan'
+        ),
+        'serviceType' => array(
+            'アメリカ大学編入サポート',
+            'カリフォルニア大学留学サポート',
+            'コミュニティカレッジ留学',
+            'UC編入サポート',
+            'カナダ大学編入サポート'
+        ),
+        'knowsAbout' => array(
+            'アメリカ大学編入',
+            'カリフォルニア大学留学',
+            'コミカレ留学',
+            'UCLA編入',
+            'UCバークレー編入',
+            'UCSD編入',
+            'コミュニティカレッジからの編入'
+        ),
+        'hasOfferCatalog' => array(
+            '@type' => 'OfferCatalog',
+            'name' => '留学サポートプラン',
+            'itemListElement' => array(
+                array(
+                    '@type' => 'Offer',
+                    'itemOffered' => array(
+                        '@type' => 'Service',
+                        'name' => 'カリフォルニア大学編入プラン',
+                        'description' => 'コミュニティカレッジからUCLA、UCバークレー、UCSDへの編入をサポート'
+                    )
+                ),
+                array(
+                    '@type' => 'Offer',
+                    'itemOffered' => array(
+                        '@type' => 'Service',
+                        'name' => '全米大学編入プラン',
+                        'description' => 'アイビーリーグを含む全米のトップ大学への編入をサポート'
+                    )
+                ),
+                array(
+                    '@type' => 'Offer',
+                    'itemOffered' => array(
+                        '@type' => 'Service',
+                        'name' => 'カナダ大学編入プラン',
+                        'description' => 'UBC、トロント大学などカナダ名門大学への編入をサポート'
+                    )
+                ),
+                array(
+                    '@type' => 'Offer',
+                    'itemOffered' => array(
+                        '@type' => 'Service',
+                        'name' => 'フルサポートプラン',
+                        'description' => '留学前から大学編入まで2年間を徹底サポート'
+                    )
+                )
+            )
+        )
+    );
+
+    echo '<script type="application/ld+json">' . json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</script>' . "\n";
+}
+add_action('wp_head', 'beyondjapan_organization_schema', 5);
+
+/**
+ * FAQ構造化データ（トップページ用）
+ * Google検索結果にFAQリッチスニペットを表示
+ */
+function beyondjapan_faq_schema() {
+    if (!is_front_page()) return;
+
+    $faqs = array(
+        array(
+            'question' => 'コミュニティカレッジからカリフォルニア大学（UC）に編入できますか？',
+            'answer' => 'はい、可能です。カリフォルニア大学の学生の3人に1人はコミュニティカレッジからの編入生です。Beyond Japanでは、UCLA、UCバークレー、UCSDなどのUC校への編入をサポートしており、UC合格率100%の実績があります。'
+        ),
+        array(
+            'question' => 'コミカレからの編入のメリットは何ですか？',
+            'answer' => '主なメリットは3つあります。1つ目は合格率が圧倒的に高いこと（UCトップ校への編入合格率50%以上）、2つ目は学費を約1,300万円節約できること、3つ目は英検2級程度の英語力からスタートできることです。'
+        ),
+        array(
+            'question' => '英語力に自信がなくても留学できますか？',
+            'answer' => 'はい、英検2級程度の英語力があれば留学を始められます。コミュニティカレッジで2年間学びながら英語力を伸ばし、4年制大学への編入を目指すことができます。'
+        ),
+        array(
+            'question' => 'Beyond Japanの合格保証とは何ですか？',
+            'answer' => 'UCB（バークレー）、UCLA、UCSDのTOP3校に編入合格できなかった場合、代金を全額返金する保証制度です。文系が対象で、理系は事前テスト合格者が対象となります。'
+        ),
+        array(
+            'question' => 'アメリカ大学編入にかかる費用はどのくらいですか？',
+            'answer' => 'コミュニティカレッジを経由することで、4年間直接大学に通う場合と比べて約1,300万円の節約が可能です。具体的な費用は留学先や期間によって異なりますので、無料カウンセリングでご相談ください。'
+        )
+    );
+
+    $schema = array(
+        '@context' => 'https://schema.org',
+        '@type' => 'FAQPage',
+        'mainEntity' => array()
+    );
+
+    foreach ($faqs as $faq) {
+        $schema['mainEntity'][] = array(
+            '@type' => 'Question',
+            'name' => $faq['question'],
+            'acceptedAnswer' => array(
+                '@type' => 'Answer',
+                'text' => $faq['answer']
+            )
+        );
+    }
+
+    echo '<script type="application/ld+json">' . json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</script>' . "\n";
+}
+add_action('wp_head', 'beyondjapan_faq_schema', 6);
+
+/**
+ * サービス詳細の構造化データ（各プランページ用）
+ */
+function beyondjapan_service_schema() {
+    $services = array(
+        'plan_uc' => array(
+            'name' => 'カリフォルニア大学編入プラン',
+            'description' => 'コミュニティカレッジからカリフォルニア大学（UCLA、UCバークレー、UCSD等）への編入を専門サポート。UC合格率100%の実績。学費を1,300万円節約しながら世界ランキング上位の名門大学へ編入できます。',
+            'provider' => 'Beyond Japan',
+            'areaServed' => 'カリフォルニア州、アメリカ合衆国',
+            'serviceType' => 'カリフォルニア大学編入サポート'
+        ),
+        'plan_all' => array(
+            'name' => '全米大学編入プラン',
+            'description' => 'コミュニティカレッジから全米のトップ大学への編入をサポート。コロンビア大学、NYU、USC等アイビーリーグを含む名門大学への編入実績あり。',
+            'provider' => 'Beyond Japan',
+            'areaServed' => 'アメリカ合衆国全土',
+            'serviceType' => '全米大学編入サポート'
+        ),
+        'plan_canada' => array(
+            'name' => 'カナダ大学編入プラン',
+            'description' => 'カナダのコミュニティカレッジからUBC（ブリティッシュコロンビア大学）、トロント大学等への編入をサポート。費用を抑えながらカナダの名門大学へ。',
+            'provider' => 'Beyond Japan',
+            'areaServed' => 'カナダ',
+            'serviceType' => 'カナダ大学編入サポート'
+        ),
+        'plan_full' => array(
+            'name' => 'フルサポートプラン',
+            'description' => '留学前から大学編入まで2年間を密着サポート。出願・VISA申請、Essay添削、履修登録、編入申請、米国生活サポートまで充実のサービス。奨学金申請サポートやオンライン英会話も含む。',
+            'provider' => 'Beyond Japan',
+            'areaServed' => 'アメリカ合衆国、カナダ',
+            'serviceType' => 'フルサポート留学プログラム'
+        )
+    );
+
+    // 現在のページスラッグを取得
+    global $post;
+    if (!is_page() || !$post) return;
+
+    $slug = $post->post_name;
+
+    if (!isset($services[$slug])) return;
+
+    $service = $services[$slug];
+
+    $schema = array(
+        '@context' => 'https://schema.org',
+        '@type' => 'Service',
+        'name' => $service['name'],
+        'description' => $service['description'],
+        'provider' => array(
+            '@type' => 'EducationalOrganization',
+            'name' => $service['provider'],
+            'url' => home_url('/')
+        ),
+        'areaServed' => $service['areaServed'],
+        'serviceType' => $service['serviceType'],
+        'url' => get_permalink()
+    );
+
+    echo '<script type="application/ld+json">' . json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</script>' . "\n";
+}
+add_action('wp_head', 'beyondjapan_service_schema', 7);
+
+/**
+ * パンくずリストの構造化データ
+ */
+function beyondjapan_breadcrumb_schema() {
+    if (is_front_page()) return;
+
+    global $post;
+
+    $breadcrumbs = array(
+        array(
+            'name' => 'ホーム',
+            'url' => home_url('/')
+        )
+    );
+
+    if (is_page()) {
+        $breadcrumbs[] = array(
+            'name' => get_the_title(),
+            'url' => get_permalink()
+        );
+    } elseif (is_single()) {
+        if (get_post_type() === 'post') {
+            $breadcrumbs[] = array(
+                'name' => '留学情報ブログ',
+                'url' => home_url('/blog/')
+            );
+        }
+        $breadcrumbs[] = array(
+            'name' => get_the_title(),
+            'url' => get_permalink()
+        );
+    } elseif (is_archive()) {
+        $breadcrumbs[] = array(
+            'name' => get_the_archive_title(),
+            'url' => get_post_type_archive_link(get_post_type())
+        );
+    }
+
+    $schema = array(
+        '@context' => 'https://schema.org',
+        '@type' => 'BreadcrumbList',
+        'itemListElement' => array()
+    );
+
+    $position = 1;
+    foreach ($breadcrumbs as $crumb) {
+        $schema['itemListElement'][] = array(
+            '@type' => 'ListItem',
+            'position' => $position,
+            'name' => $crumb['name'],
+            'item' => $crumb['url']
+        );
+        $position++;
+    }
+
+    echo '<script type="application/ld+json">' . json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</script>' . "\n";
+}
+add_action('wp_head', 'beyondjapan_breadcrumb_schema', 8);
+
+/**
+ * WebSite構造化データ（サイト検索ボックス用）
+ */
+function beyondjapan_website_schema() {
+    if (!is_front_page()) return;
+
+    $schema = array(
+        '@context' => 'https://schema.org',
+        '@type' => 'WebSite',
+        'name' => 'Beyond Japan',
+        'alternateName' => 'ビヨンドジャパン - アメリカ大学編入・カリフォルニア大学留学サポート',
+        'url' => home_url('/'),
+        'description' => 'コミュニティカレッジからUCLA・UCバークレーへの編入をサポート。UC合格率100%実績の留学エージェント。',
+        'inLanguage' => 'ja',
+        'publisher' => array(
+            '@type' => 'Organization',
+            'name' => 'Beyond Japan'
+        )
+    );
+
+    echo '<script type="application/ld+json">' . json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</script>' . "\n";
+}
+add_action('wp_head', 'beyondjapan_website_schema', 4);
+
+/**
+ * =====================================================
+ * パフォーマンス最適化
+ * =====================================================
+ */
+
+/**
+ * 画像にlazy loading属性を自動追加
+ * ファーストビュー以外の画像を遅延読み込み
+ */
+function beyondjapan_add_lazy_loading($content) {
+    if (is_admin()) return $content;
+
+    // loading="lazy" がまだない画像に追加
+    $content = preg_replace(
+        '/<img(?![^>]*loading=)([^>]*)>/i',
+        '<img loading="lazy"$1>',
+        $content
+    );
+
+    return $content;
+}
+add_filter('the_content', 'beyondjapan_add_lazy_loading');
+add_filter('post_thumbnail_html', 'beyondjapan_add_lazy_loading');
+add_filter('get_avatar', 'beyondjapan_add_lazy_loading');
+
+/**
+ * テンプレート全体の画像にlazy loading追加（出力バッファリング）
+ * ファーストビュー画像（kv_）は除外
+ */
+function beyondjapan_buffer_start() {
+    if (is_admin()) return;
+    ob_start('beyondjapan_process_output');
+}
+
+function beyondjapan_buffer_end() {
+    if (is_admin()) return;
+    if (ob_get_level() > 0) ob_end_flush();
+}
+
+function beyondjapan_process_output($html) {
+    // ファーストビュー画像を除く画像にlazy loadingを追加
+    // kv_, logo, favicon は除外（ファーストビューで必要）
+    $html = preg_replace_callback(
+        '/<img(?![^>]*loading=)([^>]*src=["\'][^"\']*(?!kv_|logo|favicon)[^"\']*["\'][^>]*)>/i',
+        function($matches) {
+            // srcにkv_, logo, faviconが含まれていなければlazy loadingを追加
+            if (!preg_match('/(kv_|logo|favicon)/i', $matches[1])) {
+                return '<img loading="lazy"' . $matches[1] . '>';
+            }
+            return $matches[0];
+        },
+        $html
+    );
+    return $html;
+}
+
+add_action('template_redirect', 'beyondjapan_buffer_start', 1);
+add_action('shutdown', 'beyondjapan_buffer_end', 999);
+
+/**
+ * 画像にdecoding="async"属性を追加
+ * ブラウザの画像デコードを非同期化
+ */
+function beyondjapan_add_async_decoding($content) {
+    if (is_admin()) return $content;
+
+    // decoding="async" がまだない画像に追加
+    $content = preg_replace(
+        '/<img(?![^>]*decoding=)([^>]*)>/i',
+        '<img decoding="async"$1>',
+        $content
+    );
+
+    return $content;
+}
+add_filter('the_content', 'beyondjapan_add_async_decoding', 11);
+add_filter('post_thumbnail_html', 'beyondjapan_add_async_decoding', 11);
+
+/**
+ * WordPress標準のlazy loadingを確実に有効化
+ */
+add_filter('wp_lazy_loading_enabled', '__return_true');
+
+/**
+ * 不要なWordPress機能を無効化（パフォーマンス向上）
+ */
+function beyondjapan_remove_unnecessary_features() {
+    // 絵文字スクリプトを削除
+    remove_action('wp_head', 'print_emoji_detection_script', 7);
+    remove_action('wp_print_styles', 'print_emoji_styles');
+    remove_action('admin_print_scripts', 'print_emoji_detection_script');
+    remove_action('admin_print_styles', 'print_emoji_styles');
+
+    // RSD/WLW リンクを削除
+    remove_action('wp_head', 'rsd_link');
+    remove_action('wp_head', 'wlwmanifest_link');
+
+    // 短縮URLを削除
+    remove_action('wp_head', 'wp_shortlink_wp_head');
+
+    // REST API リンクを削除（使用していない場合）
+    // remove_action('wp_head', 'rest_output_link_wp_head');
+
+    // oEmbed関連を削除
+    remove_action('wp_head', 'wp_oembed_add_discovery_links');
+}
+add_action('init', 'beyondjapan_remove_unnecessary_features');
+
+/**
+ * DNS Prefetchを追加（追加のドメイン用）
+ */
+function beyondjapan_dns_prefetch() {
+    echo '<link rel="dns-prefetch" href="//fonts.googleapis.com">' . "\n";
+    echo '<link rel="dns-prefetch" href="//www.google-analytics.com">' . "\n";
+    echo '<link rel="dns-prefetch" href="//www.googletagmanager.com">' . "\n";
+}
+add_action('wp_head', 'beyondjapan_dns_prefetch', 0);
 ?>

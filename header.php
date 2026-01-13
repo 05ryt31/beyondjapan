@@ -3,15 +3,31 @@
 <head>
 <?php global $cfs ;?>	
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php wp_title('&laquo;', true, 'right'); ?><?php bloginfo('name'); ?></title>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+<!-- DNS Prefetch & Preconnect（パフォーマンス最適化） -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preconnect" href="https://code.jquery.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+<!-- 外部CSS（メディアクエリで最適化） -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" media="print" onload="this.media='all'"/>
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/></noscript>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/></noscript>
+<link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css"/></noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-narrow.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-narrow.min.css"/></noscript>
+
+<!-- ローカルCSS -->
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/style_basic.css">
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/common.css">
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/form.css">
-<link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-narrow.min.css">
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/assets/image/favicon.ico" >
 
 <?php if ( is_home() || is_front_page() ) : ?>
@@ -34,7 +50,6 @@
 <style>
 <//?php echo $cfs->get('cf_css'); ?>
 </style>
-<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/image/favicon.ico" >
 <?php wp_head(); ?>
 </head>
 	
@@ -46,11 +61,8 @@
 	<header class="header container reset">
 		<div class="header-col">
 			<div class="header-col-left">
-<?php if ( is_home() || is_front_page() ) : ?>
-<h1 class="header-col-left-logo"><a href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/logo.png" alt="Beyond Japan - 海外留学・UC編入専門エージェント"/></a></h1>
-<?php else : ?>
-<p class="header-col-left-logo"><a href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/logo.png" alt="Beyond Japan - 海外留学・UC編入専門エージェント"/></a></p>
-<?php endif; ?>
+<!-- SEO: ロゴはH1ではなくdivで統一（H1は各ページのメインコンテンツに配置） -->
+<div class="header-col-left-logo"><a href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/logo.png" alt="Beyond Japan - 海外留学・UC編入専門エージェント"/></a></div>
 				
 			</div>
 			<div class="header-col-right">
