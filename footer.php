@@ -74,83 +74,69 @@
 </div>
 
 <?php wp_footer(); ?>
-<!-- js -->
-<script src="https://code.jquery.com/jquery-3.7.1.js"  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-<script src="<?php bloginfo('template_directory'); ?>/assets/js/common.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/assets/js/ajax-item.js"></script>
-<!-- scrollable --> 
-<script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
+<!-- js（パフォーマンス最適化済み） -->
+<!-- jQuery: 1回のみ読み込み -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+<!-- Slick Carousel -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+<!-- Scroll Hint -->
+<script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js" defer></script>
+<!-- ローカルJS -->
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/common.js" defer></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/ajax-item.js" defer></script>
+<!-- 初期化スクリプト（DOMContentLoaded後に実行） -->
 <script>
-  window.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
+  // Scroll Hint 初期化
+  if (typeof ScrollHint !== 'undefined') {
     new ScrollHint('.js-scrollable', {
-      i18n: {
-        scrollable: "スクロールできます"
-      }
+      i18n: { scrollable: "スクロールできます" }
     });
-  });
-</script>
-<!-- scrollable --> 
-<!-- /js -->
+  }
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-$('.slid_banner').slick({
-  infinite: true,
-  arrows:  true,
-  prevArrow: '<p class="prev-arrow"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt="バナー - Beyond Japan 海外大学留学"/></p>',
-  nextArrow: '<p class="next-arrow"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt="バナー - Beyond Japan 海外大学留学"/></p>',
-  dots: true,
-  slidesToShow: 2,
-  speed: 1000,
-  fade: false,
-  autoplay: true,
-  cssEase: 'linear',
-  centerMode:false,
-  centerPadding:'0',
-  variableWidth: false,
-	responsive: [
-		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 2,
+  // Slick Carousel 初期化
+  if (typeof jQuery !== 'undefined' && jQuery.fn.slick) {
+    var templateDir = '<?php bloginfo('template_directory'); ?>';
 
-  				variableWidth: false,
-			},
-		}
-	]
-});
+    jQuery('.slid_banner').slick({
+      infinite: true,
+      arrows: true,
+      prevArrow: '<p class="prev-arrow"><img src="' + templateDir + '/assets/image/common/ico_arrow01.png" alt="前へ" loading="lazy"/></p>',
+      nextArrow: '<p class="next-arrow"><img src="' + templateDir + '/assets/image/common/ico_arrow01.png" alt="次へ" loading="lazy"/></p>',
+      dots: true,
+      slidesToShow: 2,
+      speed: 1000,
+      autoplay: true,
+      cssEase: 'linear',
+      centerMode: false,
+      centerPadding: '0',
+      variableWidth: false,
+      responsive: [{
+        breakpoint: 768,
+        settings: { slidesToShow: 2, variableWidth: false }
+      }]
+    });
 
-$('.slid_blog').slick({
-  infinite: true,
-  arrows:  true,
-  prevArrow: '<p class="prev-arrow"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt="ブログ - Beyond Japan 海外大学留学"/></p>',
-  nextArrow: '<p class="next-arrow"><img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt="ブログ - Beyond Japan 海外大学留学"/></p>',
-  dots:  true,
-  slidesToShow: 2,
-  speed: 1000,
-  fade: false,
-  autoplay: true,
-  cssEase: 'linear',
-  centerMode: true,
-  centerPadding:'20%',
-  variableWidth: false,
-	responsive: [
-		{
-			breakpoint:999,
-			settings: {
-			slidesToShow: 1,
-				vertical: false,
-				arrows: true,
-				dots:  false,
-				centerPadding:'2%',
-			}
-		}
-	]
+    jQuery('.slid_blog').slick({
+      infinite: true,
+      arrows: true,
+      prevArrow: '<p class="prev-arrow"><img src="' + templateDir + '/assets/image/common/ico_arrow01.png" alt="前へ" loading="lazy"/></p>',
+      nextArrow: '<p class="next-arrow"><img src="' + templateDir + '/assets/image/common/ico_arrow01.png" alt="次へ" loading="lazy"/></p>',
+      dots: true,
+      slidesToShow: 2,
+      speed: 1000,
+      autoplay: true,
+      cssEase: 'linear',
+      centerMode: true,
+      centerPadding: '20%',
+      variableWidth: false,
+      responsive: [{
+        breakpoint: 999,
+        settings: { slidesToShow: 1, arrows: true, dots: false, centerPadding: '2%' }
+      }]
+    });
+  }
 });
 </script>
-<?php if ( is_home() || is_front_page() ) : ?>
-
-<?php endif; ?>
 
 </body></html>
