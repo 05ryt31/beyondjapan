@@ -23,20 +23,8 @@
 	</section>
 	<section class="home-bnr">
 		<div class="scroll-infinity">
-			<div class="scroll-infinity__wrap">
-				<ul class="scroll-infinity__list scroll-infinity__list--left">
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr01.png" alt="UCB"/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr02.png" alt="UCLA"/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr03.png" alt="Columbia"/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr04.png" alt="U of T"/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr05.png" alt="SJSU"/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr06.png" alt="MU"/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr07.png" alt="UBC"/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr08.png" alt="UCD"/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr09.png" alt="UCSD"/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr10.png" alt="USC"/></li>
-					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr11.png" alt="NYU"/></li>
-				</ul>
+			<div class="scroll-infinity__wrap" id="js-scroll-infinity">
+				<!-- 無限スクロール用：JSで複製するため1セットのみ -->
 				<ul class="scroll-infinity__list scroll-infinity__list--left">
 					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr01.png" alt="UCB"/></li>
 					<li class="scroll-infinity__item"><img src="<?php bloginfo('template_directory'); ?>/assets/image/home/bnr02.png" alt="UCLA"/></li>

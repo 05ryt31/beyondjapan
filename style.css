@@ -47,4 +47,21 @@ h1.wp-block-heading {
 	border: 0;
 }
 
+/* パフォーマンス: CSSで矢印アイコンを代替（画像リクエスト削減） */
+.css-arrow {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-top: 2px solid currentColor;
+	border-right: 2px solid currentColor;
+	transform: rotate(45deg);
+	vertical-align: middle;
+}
+.css-arrow.left {
+	transform: rotate(-135deg);
+}
+.css-arrow.down {
+	transform: rotate(135deg);
+}
+
 

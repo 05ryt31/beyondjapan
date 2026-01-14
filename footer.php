@@ -87,6 +87,16 @@
 <!-- 初期化スクリプト（DOMContentLoaded後に実行） -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  // 無限スクロールバナーの複製（画像リクエスト削減のためJSで複製）
+  var scrollWrap = document.getElementById('js-scroll-infinity');
+  if (scrollWrap) {
+    var originalList = scrollWrap.querySelector('.scroll-infinity__list');
+    if (originalList) {
+      var clone = originalList.cloneNode(true);
+      scrollWrap.appendChild(clone);
+    }
+  }
+
   // Scroll Hint 初期化
   if (typeof ScrollHint !== 'undefined') {
     new ScrollHint('.js-scrollable', {
