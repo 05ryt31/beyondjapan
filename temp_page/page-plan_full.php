@@ -99,7 +99,7 @@
 						<div class="inner">
 							<h3 class="plan-name">カナダ大学編入プラン</h3>
 						</div>
-						<a href="<?php echo home_url('/plan_full/'); ?>"><span>詳しく見る</span></a> </div>
+						<a href="<?php echo home_url('/plan_canada/'); ?>"><span>詳しく見る</span></a> </div>
 				</div>
 			</div>
 		</div>
