@@ -201,7 +201,7 @@
 									<p>慣れない英語で新しい内容を学ぶことは簡単ではありません。</p>
 									<p>現に編入試験の50％を担う最重要なのが成績であるのに、数多くの生徒が特に理系科目で成績を落としています。</p>
 									<p>Beyond Japanでは、生徒様にチューターが専属でつき、毎週時間を設けて、分からない問題や授業の内容を解説いたします。</p>
-									<p class="com-btn btn01"><a href="/contact/">詳しい内容は”無料カウンセリング”<img src="http://beyondjp.net/wp-content/themes/beyondjapan/assets/image/common/ico_arrow01.png" alt="無料カウンセリング - Beyond Japan アメリカ大学留学"/></a></p>
+									<p class="com-btn btn01"><a href="/contact/">詳しい内容は”無料カウンセリング”<img src="<?php bloginfo('template_directory'); ?>/assets/image/common/ico_arrow01.png" alt="無料カウンセリング - Beyond Japan アメリカ大学留学"/></a></p>
 								</div>
 								<div class="item-box-col-right">
 									<p><img src="<?php bloginfo('template_directory'); ?>/assets/image/plan/full/point03.jpeg" alt=""/></p>
