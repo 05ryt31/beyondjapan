@@ -4,6 +4,7 @@
 <?php global $cfs ;?>	
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><?php wp_title('&laquo;', true, 'right'); ?><?php bloginfo('name'); ?></title>
 
 <!-- DNS Prefetch & Preconnect（パフォーマンス最適化） -->
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -47,7 +48,7 @@
 //$slug = $page->post_name;
 //?>
 <style>
-<?php echo $cfs->get('cf_css'); ?>
+<//?php echo $cfs->get('cf_css'); ?>
 </style>
 <?php wp_head(); ?>
 </head>
