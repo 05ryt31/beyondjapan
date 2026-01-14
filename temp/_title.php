@@ -5,7 +5,7 @@
 		<div class="plan-title-block">
 			<div class="container">
 				<div class="plan-title-block-item">
-					<h2 class="title">カリフォルニア大学編入プラン</h2>
+					<h1 class="title">カリフォルニア大学編入プラン</h1>
 					<p class="lead">夢の一流大学へ<br>
 						賢く最短ルートで!</p>
 				</div>
@@ -17,7 +17,7 @@
 		<div class="plan-title-block">
 			<div class="container">
 				<div class="plan-title-block-item">
-					<h2 class="title">全米大学編入プラン</h2>
+					<h1 class="title">全米大学編入プラン</h1>
 					<p class="lead">全米大学の理想のキャンパスへ<br>
 						アイビーリーグも夢じゃない</p>
 				</div>
@@ -29,7 +29,7 @@
 		<div class="plan-title-block">
 			<div class="container">
 				<div class="plan-title-block-item">
-					<h2 class="title">カナダ大学編入プラン</h2>
+					<h1 class="title">カナダ大学編入プラン</h1>
 					<p class="lead">費用もビザも安心<br>
 						堅実で確かな留学</p>
 				</div>
@@ -41,7 +41,7 @@
 		<div class="plan-title-block">
 			<div class="container">
 				<div class="plan-title-block-item">
-					<h2 class="title">フルサポートプラン</h2>
+					<h1 class="title">フルサポートプラン</h1>
 					<p class="lead">留学の不安をまるごと解決<br>弊社オリジナルな<br class="view-sp">完全留学サポートプラン</p>
 				</div>
 			</div>

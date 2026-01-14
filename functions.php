@@ -7,6 +7,8 @@
 //WordPressのバージョン非表示
 remove_action('wp_head','wp_generator');
 
+add_theme_support('title-tag');
+
 //CSSやJSのバージョン非表示
 function remove_cssjs_ver2( $src ) {
     if ( strpos( $src, 'ver=' ) )
