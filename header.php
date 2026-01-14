@@ -47,7 +47,7 @@
 //$slug = $page->post_name;
 //?>
 <style>
-<?php echo $cfs->get('cf_css'); ?>
+<?php echo wp_strip_all_tags( $cfs->get( 'cf_css' ) ); ?>
 </style>
 <?php wp_head(); ?>
 </head>
